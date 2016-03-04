@@ -1,0 +1,13 @@
+* {
+	box-sizing: border-box;
+	background: rgb(114, 142, 191); 
+	font-family: 'BlanchCapsRegular', arial; 
+}
+
+/*
+	Colors:
+		purple: rgb(114, 142, 191)
+		red: rgb(191, 133, 114)
+		green: rgb(114, 191, 151)
+		brown: rgb(191, 164, 114)
+*/
