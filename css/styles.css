@@ -1,7 +1,94 @@
+/* FONTS */
+@font-face {
+    font-family: 'BlanchCapsRegular';
+    src: url('fonts/blanch_caps-webfont.eot');
+    src: url('fonts/blanch_caps-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/blanch_caps-webfont.woff') format('woff'),
+         url('fonts/blanch_caps-webfont.ttf') format('truetype'),
+         url('fonts/blanch_caps-webfont.svg#BlanchCapsRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+/*@font-face {
+    font-family: 'PacificoRegular';
+    src: url('Pacifico-webfont.eot');
+    src: url('Pacifico-webfont.eot?#iefix') format('embedded-opentype'),
+         url('Pacifico-webfont.woff') format('woff'),
+         url('Pacifico-webfont.ttf') format('truetype'),
+         url('Pacifico-webfont.svg#PacificoRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}*/
+
+/* latin */
+@font-face {
+  font-family: 'Pacifico';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Pacifico Regular'), local('Pacifico-Regular'), url(fonts/Q_Z9mv4hySLTMoMjnk_rCXYhjbSpvc47ee6xR_80Hnw.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+}
+
 * {
 	box-sizing: border-box;
-	background: rgb(114, 142, 191); 
+	margin: 0 auto; 
+	font-family: 'Pacifico', arial;
+}
+html {
+	background: rgb(120,55,154) url(../img/bg.jpg) no-repeat center; 
+	background-size: 100%;
+}
+
+/* NAV */
+header {
+	background: rgba(191, 164, 114,0.5);
+	height: 50px; 
+	width: 100%;
+	min-width: 1024px; 
+/*	position: fixed; top: 0; left: 0; right: 0; text-align: center; */
+}
+nav {
+	width: 100%; 
+	display: block; 
+	height: 50px; 
+	line-height: 50px; 
+	padding-left: 123px;
+}
+nav ul li {
+	list-style-type: none; 
+	display: block; 
+	float: left; 
+	margin-left: 50px; 
 	font-family: 'BlanchCapsRegular', arial; 
+	font-size: 30px; 
+}
+nav ul li:first-child {
+	margin-left: 0; 
+}
+nav ul li:last-child {
+	
+}
+nav ul li a {
+	color: black; 
+	text-decoration: none; 
+}
+
+.container {
+	width: 100%;  
+	min-width: 1024px; 
+}
+.inner_container {
+	width: 1024px; 
+	margin: 0 auto; 
+}
+
+.group:after {
+  content: "";
+  display: table;
+  clear: both;
 }
 
 /*
@@ -10,4 +97,5 @@
 		red: rgb(191, 133, 114)
 		green: rgb(114, 191, 151)
 		brown: rgb(191, 164, 114)
+		dark purple: rgb(120,55,154);
 */
