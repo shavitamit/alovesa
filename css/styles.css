@@ -38,13 +38,14 @@
 	font-family: 'Pacifico', arial;
 }
 html {
-	background: rgb(120,55,154) url(../img/bg.jpg) no-repeat center; 
+	/*background: rgb(120,55,154) url(../img/bg.png) no-repeat top center; 
 	background-size: 100%;
+	background-attachment: fixed; */
 }
 
 /* NAV */
 header {
-	background: rgba(191, 164, 114,0.5);
+	background: rgba(191, 164, 114,0.75);
 	height: 50px; 
 	width: 100%;
 	min-width: 1024px; 
@@ -53,16 +54,16 @@ header {
 nav {
 	width: 100%; 
 	display: block; 
-	height: 50px; 
 	line-height: 50px; 
-	padding-left: 123px;
+	padding-left: 2%;
 }
 nav ul li {
 	list-style-type: none; 
 	display: block; 
 	float: left; 
 	margin-left: 50px; 
-	font-family: 'BlanchCapsRegular', arial; 
+	/*font-family: 'BlanchCapsRegular', arial; */
+	font-family: Impact; 
 	font-size: 30px; 
 }
 nav ul li:first-child {
@@ -75,6 +76,10 @@ nav ul li a {
 	color: black; 
 	text-decoration: none; 
 }
+nav ul li a:hover {
+	/*text-decoration: underline;*/
+	color: purple; 
+}
 
 .container {
 	width: 100%;  
@@ -83,6 +88,16 @@ nav ul li a {
 .inner_container {
 	width: 1024px; 
 	margin: 0 auto; 
+}
+
+a.nav-toggle {
+	text-indent: -9999px !important;  
+	overflow: hidden; 
+	padding-left: 2%; 
+	display: block; 
+	background: url(../img/hamburger.png) no-repeat center; 
+	width: 100px; 
+	height: 100px; 
 }
 
 .group:after {
