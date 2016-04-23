@@ -58,6 +58,10 @@ body {
 	background: green; 
 }
 
+div.push {
+	height: 43px; 
+}
+
 /* NAV */
 
 nav {
@@ -65,7 +69,7 @@ nav {
 	background-color: #efeff1;
 	height: 43px;
 	text-align: center;
-	/*position: fixed; */
+	position: fixed; 
 }
 
 nav .container {
@@ -118,6 +122,8 @@ nav div a:hover {
   display: table;
   clear: both;
 }
+
+
 
 /*
 	Colors:
