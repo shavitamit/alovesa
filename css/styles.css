@@ -131,73 +131,104 @@ div.push {
 /* line 84, ../sass/styles.scss */
 nav {
   width: 100%;
-  background-color: #efeff1;
+  /*background-color: #efeff1;*/
+  background-color: #728ebf;
   height: 43px;
   text-align: center;
   position: fixed;
-  box-shadow: 2px;
+  /*box-shadow: 2px;*/
 }
-/* line 93, ../sass/styles.scss */
+/* line 94, ../sass/styles.scss */
 nav .container {
   width: 100%;
   max-width: 820px;
 }
-/* line 98, ../sass/styles.scss */
+/* line 99, ../sass/styles.scss */
 nav div {
   display: inline-block;
   text-align: center;
   width: 15%;
   padding: 5px;
 }
-/* line 105, ../sass/styles.scss */
+/* line 106, ../sass/styles.scss */
 nav div.home {
   width: 10%;
 }
-/* line 106, ../sass/styles.scss */
+/* line 107, ../sass/styles.scss */
 nav div.weddingparty {
   width: 20%;
 }
-/* line 108, ../sass/styles.scss */
+/* line 109, ../sass/styles.scss */
 nav div a {
   text-decoration: none;
   font-family: 'League Gothic';
   font-size: 25px;
   color: #78379a;
 }
-/* line 115, ../sass/styles.scss */
+/* line 116, ../sass/styles.scss */
 nav div a:hover {
   text-decoration: underline;
 }
 
 /* SECTIONS */
-/* line 123, ../sass/styles.scss */
+/* line 124, ../sass/styles.scss */
 .main .container {
   width: 100%;
   max-width: 709px;
   margin: 0 auto;
   border: solid 1px black;
-  background: #efeff1;
+  /*background: #efeff1; */
+  background: #78379a;
 }
 
-/* line 131, ../sass/styles.scss */
+/* line 133, ../sass/styles.scss */
 .main section {
   margin-top: 20px;
   font-family: 'League Gothic';
   font-size: 25px;
 }
 
-/* line 137, ../sass/styles.scss */
+/* line 139, ../sass/styles.scss */
 .group:after {
   content: "";
   display: table;
   clear: both;
 }
 
-/*
-	Colors:
-		purple: rgb(114, 142, 191)
-		red: rgb(191, 133, 114)
-		green: rgb(114, 191, 151)
-		brown: rgb(191, 164, 114)
-		dark purple: rgb(120,55,154);
-*/
+/* RESPONSIVE */
+@media all and (max-width: 620px) {
+  /* line 147, ../sass/styles.scss */
+  .push {
+    display: none;
+  }
+
+  /* align navigation in block */
+  /* line 150, ../sass/styles.scss */
+  nav {
+    position: relative;
+    height: auto;
+  }
+  /* line 151, ../sass/styles.scss */
+  nav div, nav div.home, nav div.weddingparty {
+    display: block;
+    width: 100%;
+    text-align: center;
+    border-bottom: solid 1px black;
+  }
+  /* line 158, ../sass/styles.scss */
+  nav div.container {
+    border: none;
+    padding: 0;
+    margin: 0;
+  }
+  /* line 160, ../sass/styles.scss */
+  nav a {
+    width: 100%;
+    display: block;
+  }
+
+  /* line 163, ../sass/styles.scss */
+  .main .container {
+    border: none;
+  }
+}

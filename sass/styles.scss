@@ -83,12 +83,13 @@ div.push {
 
 nav {
 	width: 100%;
-	background-color: #efeff1;
+	/*background-color: #efeff1;*/
+	background-color: $purple; 
 	height: 43px;
 	text-align: center;
 	position: fixed; 
 
-	box-shadow: 2px;
+	/*box-shadow: 2px;*/
 
 	.container {
 		width: 100%;
@@ -125,7 +126,8 @@ nav {
 	max-width: 709px; 
 	margin: 0 auto; 
 	border: solid 1px black;
-	background: #efeff1; 
+	/*background: #efeff1; */
+	background: $dark_purple; 
 }
 
 .main section {
@@ -140,13 +142,47 @@ nav {
   clear: both;
 }
 
+/* RESPONSIVE */
+@media all and (max-width: 620px) {
+	.push { display: none; }
+
+	/* align navigation in block */
+	nav {
+		div, div.home, div.weddingparty { 
+			display: block; width: 100%; text-align: center; 
+			border-bottom: solid 1px black; 
+		}
+		position: relative; 
+		height: auto; 
+
+		div.container { border: none; padding: 0; margin: 0; }
+
+		a { width: 100% ; display: block; }
+	}
+
+	.main .container { border: none; }
+
+}
 
 
-/*
-	Colors:
-		purple: rgb(114, 142, 191)
-		red: rgb(191, 133, 114)
-		green: rgb(114, 191, 151)
-		brown: rgb(191, 164, 114)
-		dark purple: rgb(120,55,154);
-*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
