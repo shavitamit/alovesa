@@ -73,7 +73,7 @@ html {
 }
 
 body {
-	// background: $green; 
+	background: #1D1D1D; 
 }
 
 div.push {
@@ -82,6 +82,8 @@ div.push {
 
 /* NAV */
 nav {
+	z-index: 9999; 
+
 	width: 100%;
 	// opacity: 0.75; 
 	//@include single-box-shadow;
@@ -125,6 +127,16 @@ nav {
 }
 
 
+/* SECTIONS */
+.main .container {
+	width: 100%; 
+	max-width: 709px; 
+	margin: 0 auto; 
+	// border: solid 1px transparent;
+	/*background: #efeff1; */
+	// background: $dark_purple; 
+	overflow: auto; 
+}
 
 /* HOME PAGE */
 .home_page {
@@ -154,7 +166,6 @@ nav {
 			font-size: 50px; 
 			margin-bottom: 20px; 
 			color: white;  
-			z-index: 9999; 
 		}
 
 		span#date { padding-top: 82px; }
@@ -162,17 +173,47 @@ nav {
 
 }
 
+.page {
+	background: #1D1D1D; 
 
-/* SECTIONS */
-.main .container {
-	width: 100%; 
-	max-width: 709px; 
-	margin: 0 auto; 
-	// border: solid 1px transparent;
-	/*background: #efeff1; */
-	// background: $dark_purple; 
-	overflow: auto; 
+	h1 { 
+		font-family: 'Pacifico';
+		font-size: 45px; 
+		display: block; 
+		color: white; 
+		margin: 25px 0; 
+	}
+
+	// The top part of any normal page
+	#page-header {
+		max-width: 1024px; 
+		margin: 0 auto; 
+		background: url('../img/bg2.jpg') no-repeat top center;
+		background-size: cover;  
+		height: 600px; 
+
+		position: relative; 
+	}
+
+	h1, section { padding: 0 15px; }
+
+	section {
+
+		p {
+			color: white; 
+			font-family: 'Calibri';
+			font-weight: normal; 
+			font-size: 20px; 
+			line-height: 1.2em; 
+		}
+
+		// overflow: hidden; 
+		padding-bottom: 100px; 
+	}
 }
+
+
+
 
 .main section {
 	margin-top: 20px; 
