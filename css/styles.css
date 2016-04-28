@@ -209,7 +209,7 @@ nav div a:hover {
 }
 
 /* RESPONSIVE */
-@media all and (max-width: 620px) {
+@media all and (max-width: 320px) {
   /* line 189, ../sass/styles.scss */
   .push {
     display: none;
