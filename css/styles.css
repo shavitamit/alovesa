@@ -90,27 +90,27 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 }
 @font-face {
   font-family: 'Pacifico';
-  font-weight: 400;
-  src: local("Pacifico Regular"), local("Pacifico-Regular"), url(fonts/pacifico.woff2) format("woff2");
+  src: url(fonts/pacifico.woff2) format("woff2"), url(fonts/pacifico.ttf) format("truetype");
   font-style: normal;
+  font-weight: 400;
 }
 /*
 	COLORS
 */
-/* line 63, ../sass/styles.scss */
+/* line 64, ../sass/styles.scss */
 * {
   box-sizing: border-box;
   margin: 0 auto;
   font-family: 'Pacifico', arial;
 }
 
-/* line 78, ../sass/styles.scss */
+/* line 79, ../sass/styles.scss */
 div.push {
   height: 43px;
 }
 
 /* NAV */
-/* line 83, ../sass/styles.scss */
+/* line 84, ../sass/styles.scss */
 nav {
   width: 100%;
   -moz-box-shadow: #728ebf 2px 2px 10px;
@@ -122,47 +122,47 @@ nav {
   position: fixed;
   /*box-shadow: 2px;*/
 }
-/* line 99, ../sass/styles.scss */
+/* line 100, ../sass/styles.scss */
 nav .container {
   width: 100%;
   max-width: 820px;
 }
-/* line 104, ../sass/styles.scss */
+/* line 105, ../sass/styles.scss */
 nav div {
   display: inline-block;
   text-align: center;
   width: 15%;
   padding: 5px;
 }
-/* line 111, ../sass/styles.scss */
+/* line 112, ../sass/styles.scss */
 nav div.home {
   width: 10%;
 }
-/* line 112, ../sass/styles.scss */
+/* line 113, ../sass/styles.scss */
 nav div.weddingparty {
   width: 20%;
 }
-/* line 114, ../sass/styles.scss */
+/* line 115, ../sass/styles.scss */
 nav div a {
   text-decoration: none;
   font-family: 'League Gothic';
   font-size: 25px;
   color: #a487eb;
 }
-/* line 121, ../sass/styles.scss */
+/* line 122, ../sass/styles.scss */
 nav div a:hover {
   text-decoration: underline;
 }
 
 /* HOME PAGE */
-/* line 129, ../sass/styles.scss */
+/* line 130, ../sass/styles.scss */
 .home_page {
   width: 100%;
   height: 100%;
   background: #78379a url(../img/bg2.jpg) no-repeat center center;
   background-size: cover;
 }
-/* line 137, ../sass/styles.scss */
+/* line 138, ../sass/styles.scss */
 .home_page #message {
   background: rgba(46, 56, 66, 0.7);
   display: block;
@@ -175,7 +175,7 @@ nav div a:hover {
   -webkit-box-shadow: rgba(255, 255, 255, 0.4) 0 0 25px, rgba(255, 255, 255, 0.4) 0 0 3px 1px inset;
   box-shadow: rgba(255, 255, 255, 0.4) 0 0 25px, rgba(255, 255, 255, 0.4) 0 0 3px 1px inset;
 }
-/* line 149, ../sass/styles.scss */
+/* line 150, ../sass/styles.scss */
 .home_page #message span {
   display: block;
   font-family: 'Pacifico';
@@ -184,13 +184,13 @@ nav div a:hover {
   color: white;
   z-index: 9999;
 }
-/* line 158, ../sass/styles.scss */
+/* line 159, ../sass/styles.scss */
 .home_page #message span#date {
   padding-top: 82px;
 }
 
 /* SECTIONS */
-/* line 165, ../sass/styles.scss */
+/* line 166, ../sass/styles.scss */
 .main .container {
   width: 100%;
   max-width: 709px;
@@ -199,14 +199,14 @@ nav div a:hover {
   overflow: auto;
 }
 
-/* line 175, ../sass/styles.scss */
+/* line 176, ../sass/styles.scss */
 .main section {
   margin-top: 20px;
   font-family: 'League Gothic';
   font-size: 25px;
 }
 
-/* line 181, ../sass/styles.scss */
+/* line 182, ../sass/styles.scss */
 .group:after {
   content: "";
   display: table;
@@ -215,36 +215,36 @@ nav div a:hover {
 
 /* RESPONSIVE */
 @media all and (max-width: 620px) {
-  /* line 191, ../sass/styles.scss */
+  /* line 192, ../sass/styles.scss */
   .push {
     display: none;
   }
 
   /* align navigation in block */
-  /* line 194, ../sass/styles.scss */
+  /* line 195, ../sass/styles.scss */
   nav {
     position: relative;
     height: auto;
   }
-  /* line 195, ../sass/styles.scss */
+  /* line 196, ../sass/styles.scss */
   nav div, nav div.home, nav div.weddingparty {
     display: block;
     width: 100%;
     text-align: center;
     border-bottom: solid 1px black;
   }
-  /* line 202, ../sass/styles.scss */
+  /* line 203, ../sass/styles.scss */
   nav div.container {
     padding: 0;
     margin: 0;
   }
-  /* line 204, ../sass/styles.scss */
+  /* line 205, ../sass/styles.scss */
   nav a {
     width: 100%;
     display: block;
   }
 
-  /* line 207, ../sass/styles.scss */
+  /* line 208, ../sass/styles.scss */
   .home_page #message {
     width: 90%;
     max-width: 450px;
