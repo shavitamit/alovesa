@@ -164,7 +164,7 @@ nav div a:hover {
 }
 /* line 138, ../sass/styles.scss */
 .home_page #message {
-  background: rgba(46, 56, 66, 0.7);
+  background: rgba(46, 56, 66, 0.5);
   display: block;
   margin: 40% auto 0 auto;
   width: 450px;
@@ -174,8 +174,9 @@ nav div a:hover {
   -moz-box-shadow: rgba(255, 255, 255, 0.4) 0 0 25px, rgba(255, 255, 255, 0.4) 0 0 3px 1px inset;
   -webkit-box-shadow: rgba(255, 255, 255, 0.4) 0 0 25px, rgba(255, 255, 255, 0.4) 0 0 3px 1px inset;
   box-shadow: rgba(255, 255, 255, 0.4) 0 0 25px, rgba(255, 255, 255, 0.4) 0 0 3px 1px inset;
+  border-radius: 600px;
 }
-/* line 150, ../sass/styles.scss */
+/* line 151, ../sass/styles.scss */
 .home_page #message span {
   display: block;
   font-family: 'Pacifico';
@@ -184,13 +185,13 @@ nav div a:hover {
   color: white;
   z-index: 9999;
 }
-/* line 159, ../sass/styles.scss */
+/* line 160, ../sass/styles.scss */
 .home_page #message span#date {
   padding-top: 82px;
 }
 
 /* SECTIONS */
-/* line 166, ../sass/styles.scss */
+/* line 167, ../sass/styles.scss */
 .main .container {
   width: 100%;
   max-width: 709px;
@@ -199,14 +200,14 @@ nav div a:hover {
   overflow: auto;
 }
 
-/* line 176, ../sass/styles.scss */
+/* line 177, ../sass/styles.scss */
 .main section {
   margin-top: 20px;
   font-family: 'League Gothic';
   font-size: 25px;
 }
 
-/* line 182, ../sass/styles.scss */
+/* line 183, ../sass/styles.scss */
 .group:after {
   content: "";
   display: table;
@@ -215,36 +216,36 @@ nav div a:hover {
 
 /* RESPONSIVE */
 @media all and (max-width: 620px) {
-  /* line 192, ../sass/styles.scss */
+  /* line 193, ../sass/styles.scss */
   .push {
     display: none;
   }
 
   /* align navigation in block */
-  /* line 195, ../sass/styles.scss */
+  /* line 196, ../sass/styles.scss */
   nav {
     position: relative;
     height: auto;
   }
-  /* line 196, ../sass/styles.scss */
+  /* line 197, ../sass/styles.scss */
   nav div, nav div.home, nav div.weddingparty {
     display: block;
     width: 100%;
     text-align: center;
     border-bottom: solid 1px black;
   }
-  /* line 203, ../sass/styles.scss */
+  /* line 204, ../sass/styles.scss */
   nav div.container {
     padding: 0;
     margin: 0;
   }
-  /* line 205, ../sass/styles.scss */
+  /* line 206, ../sass/styles.scss */
   nav a {
     width: 100%;
     display: block;
   }
 
-  /* line 208, ../sass/styles.scss */
+  /* line 209, ../sass/styles.scss */
   .home_page #message {
     width: 90%;
     max-width: 450px;

@@ -46,7 +46,7 @@
  
 	src: url(fonts/pacifico.woff2) format('woff2'),
 		 url(fonts/pacifico.ttf) format('truetype');
-		 
+
 	font-style: normal;
 	font-weight: 400;
 }
@@ -136,7 +136,7 @@ nav {
 	background-size: cover;
 
 	#message {
-		background: rgba(46,56,66,0.7); 
+		background: rgba(46,56,66,0.5); 
 		display: block;
 		margin: 40% auto 0 auto; 
 		width: 450px; 
@@ -145,6 +145,7 @@ nav {
 		position: relative; 
 		@include box-shadow(rgba(white, 0.4) 0 0 25px, rgba(white, 0.4) 0 0 3px 1px inset);
 
+		border-radius: 600px; 
 
 		// The message shown at the front page
 		span {
