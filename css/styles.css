@@ -88,7 +88,12 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   font-weight: normal;
   font-style: normal;
 }
-/* latin */
+@font-face {
+  font-family: 'Pacifico';
+  font-weight: 400;
+  src: local("Pacifico Regular"), local("Pacifico-Regular"), url(fonts/pacifico.woff2) format("woff2");
+  font-style: normal;
+}
 /*
 	COLORS
 */
@@ -105,7 +110,7 @@ div.push {
 }
 
 /* NAV */
-/* line 84, ../sass/styles.scss */
+/* line 83, ../sass/styles.scss */
 nav {
   width: 100%;
   -moz-box-shadow: #728ebf 2px 2px 10px;
@@ -117,47 +122,47 @@ nav {
   position: fixed;
   /*box-shadow: 2px;*/
 }
-/* line 100, ../sass/styles.scss */
+/* line 99, ../sass/styles.scss */
 nav .container {
   width: 100%;
   max-width: 820px;
 }
-/* line 105, ../sass/styles.scss */
+/* line 104, ../sass/styles.scss */
 nav div {
   display: inline-block;
   text-align: center;
   width: 15%;
   padding: 5px;
 }
-/* line 112, ../sass/styles.scss */
+/* line 111, ../sass/styles.scss */
 nav div.home {
   width: 10%;
 }
-/* line 113, ../sass/styles.scss */
+/* line 112, ../sass/styles.scss */
 nav div.weddingparty {
   width: 20%;
 }
-/* line 115, ../sass/styles.scss */
+/* line 114, ../sass/styles.scss */
 nav div a {
   text-decoration: none;
   font-family: 'League Gothic';
   font-size: 25px;
-  color: rgba(164, 135, 235, 0.85);
+  color: #a487eb;
 }
-/* line 122, ../sass/styles.scss */
+/* line 121, ../sass/styles.scss */
 nav div a:hover {
   text-decoration: underline;
 }
 
 /* HOME PAGE */
-/* line 128, ../sass/styles.scss */
+/* line 129, ../sass/styles.scss */
 .home_page {
   width: 100%;
   height: 100%;
   background: #78379a url(../img/bg2.jpg) no-repeat center center;
   background-size: cover;
 }
-/* line 136, ../sass/styles.scss */
+/* line 137, ../sass/styles.scss */
 .home_page #message {
   background: rgba(46, 56, 66, 0.7);
   display: block;
@@ -170,22 +175,22 @@ nav div a:hover {
   -webkit-box-shadow: rgba(255, 255, 255, 0.4) 0 0 25px, rgba(255, 255, 255, 0.4) 0 0 3px 1px inset;
   box-shadow: rgba(255, 255, 255, 0.4) 0 0 25px, rgba(255, 255, 255, 0.4) 0 0 3px 1px inset;
 }
-/* line 147, ../sass/styles.scss */
+/* line 149, ../sass/styles.scss */
 .home_page #message span {
   display: block;
-  font-family: 'League Gothic';
+  font-family: 'Pacifico';
   font-size: 50px;
   margin-bottom: 20px;
   color: white;
   z-index: 9999;
 }
-/* line 156, ../sass/styles.scss */
+/* line 158, ../sass/styles.scss */
 .home_page #message span#date {
   padding-top: 82px;
 }
 
 /* SECTIONS */
-/* line 163, ../sass/styles.scss */
+/* line 165, ../sass/styles.scss */
 .main .container {
   width: 100%;
   max-width: 709px;
@@ -194,14 +199,14 @@ nav div a:hover {
   overflow: auto;
 }
 
-/* line 173, ../sass/styles.scss */
+/* line 175, ../sass/styles.scss */
 .main section {
   margin-top: 20px;
   font-family: 'League Gothic';
   font-size: 25px;
 }
 
-/* line 179, ../sass/styles.scss */
+/* line 181, ../sass/styles.scss */
 .group:after {
   content: "";
   display: table;
@@ -210,36 +215,36 @@ nav div a:hover {
 
 /* RESPONSIVE */
 @media all and (max-width: 620px) {
-  /* line 189, ../sass/styles.scss */
+  /* line 191, ../sass/styles.scss */
   .push {
     display: none;
   }
 
   /* align navigation in block */
-  /* line 192, ../sass/styles.scss */
+  /* line 194, ../sass/styles.scss */
   nav {
     position: relative;
     height: auto;
   }
-  /* line 193, ../sass/styles.scss */
+  /* line 195, ../sass/styles.scss */
   nav div, nav div.home, nav div.weddingparty {
     display: block;
     width: 100%;
     text-align: center;
     border-bottom: solid 1px black;
   }
-  /* line 200, ../sass/styles.scss */
+  /* line 202, ../sass/styles.scss */
   nav div.container {
     padding: 0;
     margin: 0;
   }
-  /* line 202, ../sass/styles.scss */
+  /* line 204, ../sass/styles.scss */
   nav a {
     width: 100%;
     display: block;
   }
 
-  /* line 205, ../sass/styles.scss */
+  /* line 207, ../sass/styles.scss */
   .home_page #message {
     width: 90%;
     max-width: 450px;

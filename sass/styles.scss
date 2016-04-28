@@ -41,14 +41,14 @@
     font-style: normal;
 }
 
-/* latin */
-// @font-face {
-//   font-family: 'Pacifico';
-//   font-style: normal;
-//   font-weight: 400;
-//   src: local('Pacifico Regular'), local('Pacifico-Regular'), url(fonts/Q_Z9mv4hySLTMoMjnk_rCXYhjbSpvc47ee6xR_80Hnw.woff2) format('woff2');
-//   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
-// }
+@font-face {
+  font-family: 'Pacifico';
+  
+  font-weight: 400;
+  src: local('Pacifico Regular'), local('Pacifico-Regular'), url(fonts/pacifico.woff2) format('woff2');
+  // unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+	font-style: normal;
+}
 
 
 /*
@@ -80,7 +80,6 @@ div.push {
 }
 
 /* NAV */
-
 nav {
 	width: 100%;
 	// opacity: 0.75; 
@@ -116,13 +115,15 @@ nav {
 		text-decoration: none; 
 		font-family: 'League Gothic';
 		font-size: 25px;
-		color: rgba(164, 135, 235, 0.85);
+		color: rgba(164, 135, 235, 1.0);
 	}
 
 	div a:hover {
 		text-decoration: underline; 
 	}
 }
+
+
 
 /* HOME PAGE */
 .home_page {
@@ -144,9 +145,10 @@ nav {
 		@include box-shadow(rgba(white, 0.4) 0 0 25px, rgba(white, 0.4) 0 0 3px 1px inset);
 
 
+		// The message shown at the front page
 		span {
 			display: block; 
-			font-family: 'League Gothic';
+			font-family: 'Pacifico';
 			font-size: 50px; 
 			margin-bottom: 20px; 
 			color: white;  
