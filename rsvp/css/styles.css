@@ -1,0 +1,437 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+/* line 5, ../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* line 22, ../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1;
+}
+
+/* line 24, ../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 26, ../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 28, ../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 30, ../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 103, ../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 32, ../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 116, ../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block;
+}
+
+/* line 1, ../sass/ribbon.scss */
+.ribbon {
+  font-size: 52px !important;
+  /* This ribbon is based on a 16px font side and a 24px vertical rhythm. I've used em's to position each element for scalability. If you want to use a different font size you may have to play with the position of the ribbon elements */
+  width: 100%;
+  position: relative;
+  background: #131a35;
+  color: #fff;
+  text-align: center;
+  padding: 1em 2em;
+  /* Adjust to suit */
+  margin: 2em auto 3em;
+  /* Based on 24px vertical rhythm. 48px bottom margin - normally 24 but the ribbon 'graphics' take up 24px themselves so we double it. */
+}
+
+/* line 15, ../sass/ribbon.scss */
+.ribbon:before, .ribbon:after {
+  content: "";
+  position: absolute;
+  display: block;
+  bottom: -1em;
+  border: 1.5em solid rgba(19, 26, 53, 0.59);
+  z-index: -1;
+}
+
+/* line 23, ../sass/ribbon.scss */
+.ribbon:before {
+  left: -2em;
+  border-right-width: 1.5em;
+  border-left-color: transparent;
+}
+
+/* line 28, ../sass/ribbon.scss */
+.ribbon:after {
+  right: -2em;
+  border-left-width: 1.5em;
+  border-right-color: transparent;
+}
+
+/* line 33, ../sass/ribbon.scss */
+.ribbon .ribbon-content:before, .ribbon .ribbon-content:after {
+  content: "";
+  position: absolute;
+  display: block;
+  border-style: solid;
+  border-color: rgba(19, 26, 53, 0.39) transparent transparent transparent;
+  bottom: -1em;
+}
+
+/* line 41, ../sass/ribbon.scss */
+.ribbon .ribbon-content:before {
+  left: 0;
+  border-width: 1em 0 0 1em;
+}
+
+/* line 45, ../sass/ribbon.scss */
+.ribbon .ribbon-content:after {
+  right: 0;
+  border-width: 1em 1em 0 0;
+}
+
+@font-face {
+  font-family: "MCM Hellenic Wide";
+  src: url("//db.onlinewebfonts.com/t/8dfe8ad456e43c5c267b846f2316bf3b.eot");
+  src: url("//db.onlinewebfonts.com/t/8dfe8ad456e43c5c267b846f2316bf3b.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/8dfe8ad456e43c5c267b846f2316bf3b.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/8dfe8ad456e43c5c267b846f2316bf3b.woff") format("woff"), url("//db.onlinewebfonts.com/t/8dfe8ad456e43c5c267b846f2316bf3b.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/8dfe8ad456e43c5c267b846f2316bf3b.svg#MCM Hellenic Wide") format("svg");
+}
+@font-face {
+  font-family: "Futura";
+  src: url("//db.onlinewebfonts.com/t/9ab8abd11c40ee5c8d1905f9c9cb9ac8.eot");
+  src: url("//db.onlinewebfonts.com/t/9ab8abd11c40ee5c8d1905f9c9cb9ac8.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/9ab8abd11c40ee5c8d1905f9c9cb9ac8.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/9ab8abd11c40ee5c8d1905f9c9cb9ac8.woff") format("woff"), url("//db.onlinewebfonts.com/t/9ab8abd11c40ee5c8d1905f9c9cb9ac8.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/9ab8abd11c40ee5c8d1905f9c9cb9ac8.svg#Futura") format("svg");
+}
+@font-face {
+  font-family: "Bebas Neue";
+  src: url("//db.onlinewebfonts.com/t/d9472afe9afe8f7ec10413d6d7cf610b.eot");
+  src: url("//db.onlinewebfonts.com/t/d9472afe9afe8f7ec10413d6d7cf610b.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/d9472afe9afe8f7ec10413d6d7cf610b.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/d9472afe9afe8f7ec10413d6d7cf610b.woff") format("woff"), url("//db.onlinewebfonts.com/t/d9472afe9afe8f7ec10413d6d7cf610b.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/d9472afe9afe8f7ec10413d6d7cf610b.svg#Bebas Neue") format("svg");
+}
+/* line 39, ../sass/styles.scss */
+* {
+  box-sizing: border-box;
+  margin: 0 auto;
+  font-family: 'Pacifico', arial;
+}
+
+/* line 45, ../sass/styles.scss */
+html {
+  background: white;
+}
+
+/* line 47, ../sass/styles.scss */
+#container {
+  margin: 0 auto;
+  width: 1650px;
+  height: 1275px;
+  margin-top: 25px;
+  position: relative;
+}
+
+/* line 60, ../sass/styles.scss */
+.frontPostCard #top__bg_fill {
+  display: block;
+  width: 100%;
+  height: 642px;
+  background: #131a35;
+}
+/* line 70, ../sass/styles.scss */
+.frontPostCard #top__white_circle {
+  position: absolute;
+  top: 71px;
+  left: 575px;
+  background: white;
+  width: 500px;
+  height: 500px;
+  -moz-border-radius: 500px;
+  -webkit-border-radius: 500px;
+  border-radius: 500px;
+}
+/* line 85, ../sass/styles.scss */
+.frontPostCard #top__color_circle {
+  display: block;
+  width: 489px;
+  height: 486px;
+  border-radius: 490px;
+  border: solid 6px #131a35;
+  position: absolute;
+  top: 78px;
+  left: 580px;
+}
+/* line 109, ../sass/styles.scss */
+.frontPostCard #top__horizontal_line_1 {
+  display: block;
+  position: absolute;
+  top: 217px;
+  left: 658px;
+  width: 331px;
+  height: 7px;
+  background: #131a35;
+}
+/* line 113, ../sass/styles.scss */
+.frontPostCard #top__horizontal_line_2 {
+  display: block;
+  position: absolute;
+  top: 217px;
+  left: 658px;
+  width: 331px;
+  height: 7px;
+  background: #131a35;
+  top: 395px;
+}
+/* line 118, ../sass/styles.scss */
+.frontPostCard #top__please {
+  position: absolute;
+  display: block;
+  left: 732px;
+  top: 134px;
+  color: #131a35;
+  font-family: 'Roboto', sans-serif;
+  font-size: 63px;
+}
+/* line 130, ../sass/styles.scss */
+.frontPostCard #top__rsvp {
+  position: absolute;
+  display: block;
+  left: 610px;
+  top: 225px;
+  color: #131a35;
+  font-family: 'Roboto Slab', serif;
+  font-size: 167px;
+}
+/* line 146, ../sass/styles.scss */
+.frontPostCard #top__by_date {
+  position: absolute;
+  display: block;
+  left: 706px;
+  top: 432px;
+  color: #131a35;
+  font-family: 'Yeseva One', cursive;
+  font-size: 63px;
+}
+/* line 156, ../sass/styles.scss */
+.frontPostCard #top__by_date #top__by {
+  font-family: 'Roboto', sans-serif;
+}
+/* line 159, ../sass/styles.scss */
+.frontPostCard .stripe {
+  position: absolute;
+  width: 100%;
+  z-index: -1;
+  margin-top: -10px;
+}
+/* line 164, ../sass/styles.scss */
+.frontPostCard .stripe > h2 {
+  padding: 30px;
+}
+/* line 169, ../sass/styles.scss */
+.frontPostCard .stripe-1 {
+  background: repeating-linear-gradient(-45deg, #131a35, #131a35 3px, white 6px, white 9px);
+  opacity: 0.8;
+}
+/* line 183, ../sass/styles.scss */
+.frontPostCard #bottom #bottom_main_horizontal_line {
+  display: block;
+  position: absolute;
+  background: #131a35;
+  top: 817px;
+  left: 75px;
+  width: 1500px;
+  height: 7px;
+}
+/* line 193, ../sass/styles.scss */
+.frontPostCard #bottom #bottom__group_accept_decline {
+  position: relative;
+  top: 262px;
+  left: 0;
+  width: 100%;
+}
+/* line 200, ../sass/styles.scss */
+.frontPostCard #bottom #bottom__group_accept_decline #bottom_left_horizontal_line, .frontPostCard #bottom #bottom__group_accept_decline #bottom_right_horizontal_line {
+  display: block;
+  position: absolute;
+  background: #131a35;
+  top: 50px;
+  left: 75px;
+  width: 100px;
+  height: 5px;
+}
+/* line 210, ../sass/styles.scss */
+.frontPostCard #bottom #bottom__group_accept_decline #bottom_accepts, .frontPostCard #bottom #bottom__group_accept_decline #bottom_decline {
+  position: absolute;
+  color: #131a35;
+  font-size: 58px;
+  top: 0;
+  left: 185px;
+  font-family: 'Oswald', sans-serif;
+}
+/* line 228, ../sass/styles.scss */
+.frontPostCard #bottom #bottom__group_accept_decline #bottom_right_horizontal_line {
+  left: 962px;
+}
+/* line 229, ../sass/styles.scss */
+.frontPostCard #bottom #bottom__group_accept_decline #bottom_decline {
+  left: 1072px;
+}
+/* line 234, ../sass/styles.scss */
+.frontPostCard #bottom #bottom__please_choose {
+  position: absolute;
+  left: 240px;
+  top: 1033px;
+  color: gray;
+  font-family: 'Oswald', sans-serif;
+  font-size: 52px;
+  letter-spacing: 2px;
+}
+/* line 246, ../sass/styles.scss */
+.frontPostCard #bottom #bottom__group_food_options {
+  position: relative;
+  top: 402px;
+  left: 0;
+  width: 100%;
+}
+/* line 253, ../sass/styles.scss */
+.frontPostCard #bottom #bottom__group_food_options #bottom_left_horizontal_line, .frontPostCard #bottom #bottom__group_food_options #bottom_middle_horizontal_line, .frontPostCard #bottom #bottom__group_food_options #bottom_right_horizontal_line {
+  display: block;
+  position: absolute;
+  background: #131a35;
+  top: 148px;
+  left: 75px;
+  width: 100px;
+  height: 5px;
+}
+/* line 263, ../sass/styles.scss */
+.frontPostCard #bottom #bottom__group_food_options #bottom_food_left, .frontPostCard #bottom #bottom__group_food_options #bottom_food_middle, .frontPostCard #bottom #bottom__group_food_options #bottom_food_right {
+  position: absolute;
+  left: 185px;
+  top: 98px;
+  color: #131a35;
+  font-family: 'Oswald', sans-serif;
+  font-size: 58px;
+  letter-spacing: 2px;
+}
+/* line 274, ../sass/styles.scss */
+.frontPostCard #bottom #bottom__group_food_options #bottom_middle_horizontal_line {
+  left: 593px;
+}
+/* line 275, ../sass/styles.scss */
+.frontPostCard #bottom #bottom__group_food_options #bottom_right_horizontal_line {
+  left: 1190px;
+}
+/* line 276, ../sass/styles.scss */
+.frontPostCard #bottom #bottom__group_food_options #bottom_food_middle {
+  left: 704px;
+}
+/* line 277, ../sass/styles.scss */
+.frontPostCard #bottom #bottom__group_food_options #bottom_food_right {
+  left: 1295px;
+}
+
+/* line 291, ../sass/styles.scss */
+.backPostCard #message {
+  position: absolute;
+  width: 613px;
+  text-align: left;
+  top: 126px;
+  left: 101px;
+  font-family: 'Oswald', sans-serif;
+  color: black;
+  letter-spacing: 2px;
+  font-size: 52px;
+}
+/* line 303, ../sass/styles.scss */
+.backPostCard .return_address {
+  position: absolute;
+  text-align: center;
+  top: 568px;
+  left: 905px;
+  font-family: 'Oswald', sans-serif;
+  color: #131a35;
+  letter-spacing: 2px;
+  font-size: 58px;
+  line-height: 1.3em;
+}
+/* line 314, ../sass/styles.scss */
+.backPostCard .return_address span {
+  float: left;
+  clear: left;
+  margin-bottom: 3px;
+  width: 100%;
+}
+/* line 323, ../sass/styles.scss */
+.backPostCard .vertical_text {
+  position: absolute;
+  left: 690px;
+  top: 826px;
+}
+/* line 329, ../sass/styles.scss */
+.backPostCard .vertical_text .text {
+  font-family: 'Oswald', sans-serif;
+  transform: rotate(-90deg);
+  letter-spacing: 2px;
+  font-size: 50px;
+  position: absolute;
+  left: -400px;
+  top: -206px;
+  width: 882px;
+  color: #131a35;
+}
+/* line 341, ../sass/styles.scss */
+.backPostCard .vertical_text .heart {
+  position: absolute;
+  top: 279px;
+  left: 23px;
+  color: #ce694b;
+  font-size: 50px;
+}
+/* line 351, ../sass/styles.scss */
+.backPostCard .right_side {
+  position: absolute;
+  left: 991px;
+  top: 259px;
+}
+/* line 357, ../sass/styles.scss */
+.backPostCard .right_side .ribbon_wrapper {
+  position: absolute;
+  top: -97px;
+  width: 476px;
+  left: -22px;
+  font-family: 'Oswald', sans-serif;
+  letter-spacing: 2px;
+}

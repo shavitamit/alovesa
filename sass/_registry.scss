@@ -1,0 +1,23 @@
+@import "compass/css3/border-radius";
+
+// OUR REGISTRY
+.our_registry {
+
+  section p {
+    font-family: 'Josefin Sans', sans-serif;
+    color: rgba(210,210,210,0.9);
+  }
+
+  .registry_store {
+    padding: 15px;
+    background: white;
+    display: block;
+    width: 40%;
+    @include border-radius(10px);
+  }
+
+  #page-header {
+      // background: url('../img/bg2.jpg') no-repeat top center;
+      background-image: url('../img/our_registry_header.jpg') !important;
+  }
+}

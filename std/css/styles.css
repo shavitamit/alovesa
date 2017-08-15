@@ -1,0 +1,567 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+@import url(//db.onlinewebfonts.com/c/8dfe8ad456e43c5c267b846f2316bf3b?family=MCM+Hellenic+Wide);
+@import url(//db.onlinewebfonts.com/c/9ab8abd11c40ee5c8d1905f9c9cb9ac8?family=Futura);
+@import url(//db.onlinewebfonts.com/c/d9472afe9afe8f7ec10413d6d7cf610b?family=Bebas+Neue);
+/* line 5, ../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* line 22, ../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1;
+}
+
+/* line 24, ../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 26, ../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 28, ../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 30, ../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 103, ../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 32, ../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 116, ../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block;
+}
+
+/* line 1, ../sass/ribbon.scss */
+.ribbon {
+  font-size: 16px !important;
+  /* This ribbon is based on a 16px font side and a 24px vertical rhythm. I've used em's to position each element for scalability. If you want to use a different font size you may have to play with the position of the ribbon elements */
+  width: 50%;
+  position: relative;
+  background: #ba89b6;
+  color: #fff;
+  text-align: center;
+  padding: 1em 2em;
+  /* Adjust to suit */
+  margin: 2em auto 3em;
+  /* Based on 24px vertical rhythm. 48px bottom margin - normally 24 but the ribbon 'graphics' take up 24px themselves so we double it. */
+}
+
+/* line 14, ../sass/ribbon.scss */
+.ribbon:before, .ribbon:after {
+  content: "";
+  position: absolute;
+  display: block;
+  bottom: -1em;
+  border: 1.5em solid #986794;
+  z-index: -1;
+}
+
+/* line 22, ../sass/ribbon.scss */
+.ribbon:before {
+  left: -2em;
+  border-right-width: 1.5em;
+  border-left-color: transparent;
+}
+
+/* line 27, ../sass/ribbon.scss */
+.ribbon:after {
+  right: -2em;
+  border-left-width: 1.5em;
+  border-right-color: transparent;
+}
+
+/* line 32, ../sass/ribbon.scss */
+.ribbon .ribbon-content:before, .ribbon .ribbon-content:after {
+  content: "";
+  position: absolute;
+  display: block;
+  border-style: solid;
+  border-color: #804f7c transparent transparent transparent;
+  bottom: -1em;
+}
+
+/* line 40, ../sass/ribbon.scss */
+.ribbon .ribbon-content:before {
+  left: 0;
+  border-width: 1em 0 0 1em;
+}
+
+/* line 44, ../sass/ribbon.scss */
+.ribbon .ribbon-content:after {
+  right: 0;
+  border-width: 1em 1em 0 0;
+}
+
+@font-face {
+  font-family: "MCM Hellenic Wide";
+  src: url("//db.onlinewebfonts.com/t/8dfe8ad456e43c5c267b846f2316bf3b.eot");
+  src: url("//db.onlinewebfonts.com/t/8dfe8ad456e43c5c267b846f2316bf3b.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/8dfe8ad456e43c5c267b846f2316bf3b.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/8dfe8ad456e43c5c267b846f2316bf3b.woff") format("woff"), url("//db.onlinewebfonts.com/t/8dfe8ad456e43c5c267b846f2316bf3b.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/8dfe8ad456e43c5c267b846f2316bf3b.svg#MCM Hellenic Wide") format("svg");
+}
+@font-face {
+  font-family: "Futura";
+  src: url("//db.onlinewebfonts.com/t/9ab8abd11c40ee5c8d1905f9c9cb9ac8.eot");
+  src: url("//db.onlinewebfonts.com/t/9ab8abd11c40ee5c8d1905f9c9cb9ac8.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/9ab8abd11c40ee5c8d1905f9c9cb9ac8.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/9ab8abd11c40ee5c8d1905f9c9cb9ac8.woff") format("woff"), url("//db.onlinewebfonts.com/t/9ab8abd11c40ee5c8d1905f9c9cb9ac8.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/9ab8abd11c40ee5c8d1905f9c9cb9ac8.svg#Futura") format("svg");
+}
+@font-face {
+  font-family: "Bebas Neue";
+  src: url("//db.onlinewebfonts.com/t/d9472afe9afe8f7ec10413d6d7cf610b.eot");
+  src: url("//db.onlinewebfonts.com/t/d9472afe9afe8f7ec10413d6d7cf610b.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/d9472afe9afe8f7ec10413d6d7cf610b.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/d9472afe9afe8f7ec10413d6d7cf610b.woff") format("woff"), url("//db.onlinewebfonts.com/t/d9472afe9afe8f7ec10413d6d7cf610b.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/d9472afe9afe8f7ec10413d6d7cf610b.svg#Bebas Neue") format("svg");
+}
+/* line 40, ../sass/styles.scss */
+* {
+  box-sizing: border-box;
+  margin: 0 auto;
+  font-family: 'Pacifico', arial;
+}
+
+/* line 46, ../sass/styles.scss */
+html {
+  background: white;
+}
+
+/* line 48, ../sass/styles.scss */
+#test {
+  height: 610px;
+  display: block;
+  width: 2px;
+  position: absolute;
+  left: 50%;
+  top: 10px;
+  z-index: 999;
+}
+
+/* line 59, ../sass/styles.scss */
+#container {
+  margin: 0 auto;
+  width: 800px;
+  height: 515px;
+  margin-top: 25px;
+  border: solid 1px black;
+  position: relative;
+}
+
+/* line 75, ../sass/styles.scss */
+#img {
+  display: block;
+  position: relative;
+  width: 100%;
+}
+
+/* line 81, ../sass/styles.scss */
+#banner_content_wrapper {
+  position: absolute;
+  left: 27px;
+  top: 0;
+}
+
+/* line 87, ../sass/styles.scss */
+#banner {
+  width: 800px;
+  height: 100px;
+  background: rgba(50, 71, 72, 0.65);
+  position: absolute;
+  margin: 0 auto;
+  top: 397px;
+  left: 0px;
+}
+/* line 98, ../sass/styles.scss */
+#banner #top_horizontal_lines {
+  top: 5px;
+}
+/* line 99, ../sass/styles.scss */
+#banner #bottom_horizontal_lines {
+  top: 89px;
+}
+/* line 101, ../sass/styles.scss */
+#banner .horizontal_lines {
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 6px;
+  top: 5px;
+  background: transparent;
+}
+/* line 110, ../sass/styles.scss */
+#banner .horizontal_line {
+  width: 100%;
+  display: block;
+  background: #faf2ed;
+  height: 1px;
+}
+/* line 117, ../sass/styles.scss */
+#banner .horizontal_line_1 {
+  margin-top: 0;
+}
+/* line 118, ../sass/styles.scss */
+#banner .horizontal_line_2 {
+  margin-top: 3px;
+}
+/* line 121, ../sass/styles.scss */
+#banner .vertical_lines {
+  display: block;
+  position: absolute;
+  height: 100%;
+  width: 6px;
+  left: 0px;
+  background: transparent;
+}
+/* line 130, ../sass/styles.scss */
+#banner .vertical_line {
+  height: 100%;
+  display: block;
+  background: #faf2ed;
+  width: 1px;
+  position: absolute;
+}
+/* line 138, ../sass/styles.scss */
+#banner .vertical_line_1 {
+  left: 0;
+}
+/* line 139, ../sass/styles.scss */
+#banner .vertical_line_2 {
+  left: 5px;
+}
+/* line 142, ../sass/styles.scss */
+#banner #save_the_date {
+  width: 175px;
+  background: transparent;
+  height: 80px;
+  top: 10px;
+  left: 40px;
+  position: absolute;
+}
+/* line 150, ../sass/styles.scss */
+#banner #save_the_date #left_vertical_lines {
+  left: 5px;
+}
+/* line 151, ../sass/styles.scss */
+#banner #save_the_date #right_vertical_lines {
+  left: 77%;
+}
+/* line 153, ../sass/styles.scss */
+#banner #save_the_date #mini_vertical_line {
+  height: 31px;
+  display: block;
+  background: #faf2ed;
+  width: 2px;
+  position: absolute;
+  left: 45px;
+  top: 42px;
+}
+/* line 164, ../sass/styles.scss */
+#banner #save_the_date .text span {
+  position: absolute;
+  color: white;
+}
+/* line 165, ../sass/styles.scss */
+#banner #save_the_date .text span.save {
+  font-family: 'Yeseva One', cursive;
+  font-size: 34px;
+  top: 6px;
+  left: 26px;
+  letter-spacing: 3px;
+}
+/* line 176, ../sass/styles.scss */
+#banner #save_the_date .text span.the {
+  top: 50px;
+  font-size: 12px;
+  font-family: 'Futura';
+  left: 17px;
+  transform: rotate(-90deg);
+  letter-spacing: 3px;
+}
+/* line 184, ../sass/styles.scss */
+#banner #save_the_date .text span.date {
+  top: 39px;
+  left: 54px;
+  font-family: 'Anton', sans-serif;
+  font-size: 37px;
+}
+/* line 195, ../sass/styles.scss */
+#banner #main_info {
+  width: 408px;
+  background: transparent;
+  height: 80px;
+  top: 10px;
+  left: 165px;
+  position: absolute;
+}
+/* line 203, ../sass/styles.scss */
+#banner #main_info #right_vertical_lines {
+  left: 99%;
+}
+/* line 205, ../sass/styles.scss */
+#banner #main_info .text {
+  font-family: 'Oswald', sans-serif;
+  color: white;
+  font-size: 34px;
+  position: absolute;
+  top: 5px;
+  letter-spacing: 5px;
+}
+/* line 214, ../sass/styles.scss */
+#banner #main_info .text.amit_and_amanda_wrap {
+  left: 5px;
+}
+/* line 217, ../sass/styles.scss */
+#banner #main_info .text span {
+  position: absolute;
+}
+/* line 219, ../sass/styles.scss */
+#banner #main_info .text span.AMIT {
+  left: 66px;
+}
+/* line 220, ../sass/styles.scss */
+#banner #main_info .text span.AND {
+  left: 165px;
+  font-family: 'Slabo 27px', serif;
+  top: 1px;
+}
+/* line 224, ../sass/styles.scss */
+#banner #main_info .text span.AMANDA {
+  left: 206px;
+}
+/* line 228, ../sass/styles.scss */
+#banner #main_info .text .location, #banner #main_info .text .website {
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+  font-weight: bold;
+  top: 51px;
+  left: 45px;
+  letter-spacing: 1px;
+  width: 300px !important;
+}
+/* line 238, ../sass/styles.scss */
+#banner #main_info .text .website {
+  left: 251px;
+}
+/* line 240, ../sass/styles.scss */
+#banner #main_info .text #mini_vertical_line {
+  width: 2px;
+  display: block;
+  position: absolute;
+  height: 21px;
+  background: white;
+  left: 222px;
+  top: 48px;
+}
+/* line 253, ../sass/styles.scss */
+#banner #main_info .horizontal_line {
+  position: absolute;
+  top: 43px;
+  left: 16px;
+  width: 388px;
+  height: 2px;
+}
+/* line 264, ../sass/styles.scss */
+#banner #date {
+  width: 100px;
+  background: transparent;
+  height: 80px;
+  top: 10px;
+  left: 577px;
+  position: absolute;
+}
+/* line 272, ../sass/styles.scss */
+#banner #date #right_vertical_lines {
+  left: 99%;
+}
+/* line 274, ../sass/styles.scss */
+#banner #date .text {
+  font-family: 'Yeseva One', cursive;
+  color: white;
+  font-size: 19px;
+  position: absolute;
+  top: 5px;
+  letter-spacing: 2px;
+}
+/* line 284, ../sass/styles.scss */
+#banner #date .text span {
+  position: absolute;
+}
+/* line 286, ../sass/styles.scss */
+#banner #date .text span.SEPT {
+  top: 0;
+  left: 21px;
+}
+/* line 287, ../sass/styles.scss */
+#banner #date .text span.day {
+  top: 20px;
+  left: 26px;
+  font-size: 32px;
+}
+/* line 288, ../sass/styles.scss */
+#banner #date .text span.year {
+  top: 54px;
+  left: 24px;
+}
+
+/*
+  BACK SIDE OF CARD
+*/
+/* line 302, ../sass/styles.scss */
+#back_side {
+  margin: 5px;
+  position: relative;
+}
+/* line 307, ../sass/styles.scss */
+#back_side .return_address {
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  font-family: 'Oswald', sans-serif;
+  color: black;
+  letter-spacing: 1px;
+}
+/* line 317, ../sass/styles.scss */
+#back_side .return_address span {
+  float: left;
+  clear: left;
+  margin-bottom: 3px;
+}
+/* line 325, ../sass/styles.scss */
+#back_side .back_image {
+  position: absolute;
+  left: 60px;
+  top: 136px;
+}
+/* line 331, ../sass/styles.scss */
+#back_side .back_image img {
+  width: 220px;
+  transform: rotate(-5deg);
+}
+/* line 335, ../sass/styles.scss */
+#back_side .back_image .website {
+  font-family: 'Oswald', sans-serif;
+  position: absolute;
+  transform: rotate(-5deg);
+  left: 47px;
+  top: 223px;
+  font-size: 17px;
+  letter-spacing: 2px;
+}
+/* line 345, ../sass/styles.scss */
+#back_side .back_image .stripe {
+  position: absolute;
+  width: 144px;
+  top: -24px;
+  left: 22px;
+  z-index: 9999;
+}
+/* line 351, ../sass/styles.scss */
+#back_side .back_image .stripe > h2 {
+  padding: 15px;
+}
+/* line 356, ../sass/styles.scss */
+#back_side .back_image .stripe-1 {
+  background: repeating-linear-gradient(-45deg, #ba89b6, #ba89b6 3px, white 3px, white 6px);
+}
+/* line 370, ../sass/styles.scss */
+#back_side .vertical_text {
+  position: absolute;
+  left: 340px;
+  top: 328px;
+}
+/* line 376, ../sass/styles.scss */
+#back_side .vertical_text .text {
+  font-family: 'Oswald', sans-serif;
+  transform: rotate(-90deg);
+  letter-spacing: 2px;
+  font-size: 15px;
+  position: absolute;
+  left: -174px;
+  top: -131px;
+  width: 400px;
+}
+/* line 387, ../sass/styles.scss */
+#back_side .vertical_text .heart {
+  position: absolute;
+  top: 83px;
+  left: 19px;
+  color: #ce694b;
+}
+/* line 396, ../sass/styles.scss */
+#back_side .right_side {
+  position: absolute;
+  left: 443px;
+  top: 259px;
+}
+/* line 402, ../sass/styles.scss */
+#back_side .right_side .horizontal_line {
+  width: 300px;
+  height: 1px;
+  display: block;
+  margin-bottom: 50px;
+  background: black;
+}
+/* line 410, ../sass/styles.scss */
+#back_side .right_side .ribbon_wrapper {
+  position: absolute;
+  top: -169px;
+  width: 476px;
+  left: -89px;
+  font-family: 'Oswald', sans-serif;
+  letter-spacing: 2px;
+}
+
+@media print {
+  /* line 436, ../sass/styles.scss */
+  body * {
+    visibility: hidden;
+  }
+
+  /* line 439, ../sass/styles.scss */
+  #container, #container * {
+    visibility: visible;
+  }
+
+  /* line 440, ../sass/styles.scss */
+  #container {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+  @page {
+    size: landscape;
+  }
+}

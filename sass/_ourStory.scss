@@ -1,0 +1,125 @@
+/* OUR STORY */
+.our_story {
+	.container > section {
+    padding-bottom: 30px;
+    p {
+			font-family: 'Josefin Sans', sans-serif;
+      color: rgba(210,210,210,0.9);
+    }
+  }
+
+  #page-header {
+      // background: url('../img/bg2.jpg') no-repeat top center;
+      background-image: url('../img/our_story_header.jpg');
+  }
+
+
+
+  div.timeline {
+    position: relative;
+    overflow: auto;
+
+    &:before {
+      content: '';
+      position: absolute;
+      height: 100%;
+      width: 5px;
+      background: $timeline_color;
+      left: 0;
+    }
+
+    h2 {
+      background: $timeline_h2;
+      color: black;
+      max-width: 6em;
+      margin: 0 auto 1em;
+      padding: 0.5em;
+      text-align: center;
+      position: relative;
+      clear: both;
+    }
+
+    h3 {
+      font-family: 'League Gothic';
+      font-size: 25px;
+      color: $timeline_h3;
+      margin-top: 0;
+    }
+
+    ul {
+      list-style: none;
+      padding: 0 0 0 1em;
+      z-index: 1;
+    }
+
+    li {
+      background: $timeline_color;
+      padding: 1em;
+      margin-bottom: 1em;
+      position: relative;
+
+      &:before {
+        content: '';
+        width: 0;
+        height: 0;
+        border-top: 1em solid $timeline_color;
+        border-left: 1em solid transparent;
+        position: absolute;
+        left: -1em;
+        top: 0;
+      }
+    }
+
+    time {
+      font-size: 20px;
+      color: $timeline_date;
+    }
+  }
+
+
+	span#our_wedding {
+		clear: left;
+		display: block;
+		margin-top: 10px;
+		font-size: 23px;
+	}
+}
+
+@media screen and (min-width: 40em) {
+
+  .timeline {
+    &:before {
+      left: 50% !important;
+    }
+
+    ul {
+      padding-left: 0;
+      max-width: 100%;
+      margin: 0 auto;
+    }
+
+    li {
+      width: 42%;
+    }
+
+    li:nth-child(even) {
+      float: right;
+      margin-top: 2em;
+    }
+
+    li:nth-child(odd) {
+      float: left;
+
+      &:before {
+        border-top: 1em solid $timeline_color;
+        border-right: 1em solid transparent;
+        right: -1em;
+        left: auto !important;
+      }
+    }
+
+    li:nth-of-type(2n+1) {
+      clear: both;
+    }
+  }
+}

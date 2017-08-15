@@ -1,0 +1,321 @@
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+
+	<title>A&amp;A Wedding!</title>
+	<meta name="description" content="A&amp;A Wedding!">
+	<meta name="author" content="Amit Shavit">
+	<meta name="viewport" content="initial-scale = 1.0,maximum-scale = 1.0" />
+
+
+	<link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.6.4/leaflet.css" />
+	<script src="http://cdn.leafletjs.com/leaflet-0.6.4/leaflet.js"></script>
+	<script src='https://api.mapbox.com/mapbox.js/v2.4.0/mapbox.js'></script>
+	<link href='https://api.mapbox.com/mapbox.js/v2.4.0/mapbox.css' rel='stylesheet' />
+
+
+	<link href="https://fonts.googleapis.com/css?family=Catamaran|Lobster|Josefin+Sans" rel="stylesheet">
+	<link rel="stylesheet" href="css/styles.css?v=1.2" />
+
+
+
+  	<!--[if lt IE 9]>
+  	<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+  	<![endif]-->
+
+	<script>
+	  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+	  ga('create', 'UA-77118304-1', 'auto');
+	  ga('send', 'pageview');
+	</script>
+
+</head>
+
+<body>
+
+	<!-- BEGIN NAVIGATION MENU -->
+	<div class="container">
+		<div id="hamburger">
+
+			<div id="hamburgerIcon">
+				<span></span>
+				<span></span>
+				<span></span>
+				<span></span>
+			</div>
+
+		</div>
+	</div>
+
+	<nav class="">
+	<div class="container">
+
+			<div class="home navItem">
+				<a href="index.html">A &amp; A</a>
+			</div>
+
+			<div class="pictures navItem">
+				<a href="pictures.html">PICTURES</a>
+			</div>
+
+			<div class="ourstory navItem">
+				<a href="ourstory.html">OUR STORY</a>
+			</div>
+
+			<div class="eventinfo navItem">
+				<a href="eventinfo.html" class="active">EVENT INFO</a>
+			</div>
+
+			<div class="weddingparty navItem">
+				<a href="weddingparty.html">WEDDING PARTY</a>
+			</div>
+
+			<div class="registry navItem">
+				<a href="registry.html">REGISTRY</a>
+			</div>
+
+	</div>
+	</nav>
+
+	<!-- END NAVIGATION MENU -->
+
+<!-- to push the page down so the fixed nav doesn't hide content -->
+<!-- <div class="push"></div> -->
+
+<div class="main page event_info">
+
+	<div id="page-header"></div>
+
+	<div class="container">
+
+		<h1>Event Info</h1>
+
+		<section id="ceremony_details">
+
+			<h2>Ceremony &amp; Reception</h2>
+
+			<span id="date">9.3.2017</span>
+			<span id="time">4:30 pm</span>
+			<!-- <p><em>Statler City</em></p> -->
+			<p>Statler City</p>
+			<p>107 Delaware Ave.</p>
+			<p>Buffalo, NY 14202</p>
+
+                        <br/><p><strong>Dress Code</strong>: Semi-formal</p>
+
+			<br/><p>Complimentary Valet Available</p>
+
+			<div class="food_options">
+				<h2>Food</h2>
+				<p><strong>Beef</strong>: Filet Mignon</p>
+				<p><strong>Chicken</strong>: Chicken Milanese</p>
+				<p><strong>Vegetarian</strong>: Vegetable Risotto</p>
+			</div>
+
+			<div class="food_options">
+				<h2>General Info</h2>
+				<p><strong>Please Note:</strong> if you plan to go to Canada over the weekend, you will need to bring your passport, and you will need to have access to a car (too far to Uber).</p>
+			</div>
+
+			<!-- <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d2923.263443955771!2d-78.87489743862507!3d42.888388205066!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x5b18853a3f464660!2sStatler+City!5e0!3m2!1sen!2sus!4v1461894074990" width="400" height="250" frameborder="0" style="border:0" allowfullscreen></iframe> -->
+
+
+
+			<div id="mapid"></div>
+
+			<script>
+
+			L.mapbox.accessToken = 'pk.eyJ1Ijoic2hhdml0YW1pdCIsImEiOiJjaW5zNmZjZ2QxMG96dWtseTQycXhqeWw2In0.VwOalwmluElmc6T8r1QSYg';
+
+			var mapBoxUrl = 'https://api.mapbox.com/styles/v1/shavitamit/cintinlry003wzvnl4e8mv498/tiles/{z}/{x}/{y}?access_token=pk.eyJ1Ijoic2hhdml0YW1pdCIsImEiOiJjaW5zNmJxM2cxMHFudHFram4wMWR5cWc2In0.8iSMtmKveklyOiEI1WjA5A';
+
+			var mapboxTiles = L.tileLayer(mapBoxUrl, {
+    				attribution: '© <a href="https://www.mapbox.com/map-feedback/">Mapbox</a> © <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>',
+                                    tileSize: 512,
+                                    zoomOffset: -1
+				});
+
+
+
+
+			var map = L.map('mapid')
+			    .addLayer(mapboxTiles)
+			    .setView([42.888284, -78.877222], 15);
+
+			map.scrollWheelZoom.disable();
+
+			var colors = {
+				'hotels': {
+					'color':'red',
+					'fillColor': 'red',
+					'fillOpacity' : 0.5
+				}
+			};
+
+			 // statler city -- venue
+			 L.marker([42.887459, -78.877040])
+			 	.addTo(map)
+			 	.bindPopup("<strong>Statler City!</strong>")
+			 	.openPopup();
+
+
+			var LeafIcon = L.Icon.extend({
+			    options: {
+			        iconSize:     [32, 37],
+			        iconAnchor:   [32, 37],
+			        popupAnchor:  [-17, -37]
+			    }
+			});
+
+			var hotelIcon = new LeafIcon({iconUrl: 'img/hotel-icon.png'});
+
+			L.marker([42.887970, -78.874165], {icon: hotelIcon}).addTo(map).bindPopup("Hyatt Regency");
+			L.marker([42.889867, -78.877690], {icon: hotelIcon}).addTo(map).bindPopup("Embassy Suites");
+			L.marker([42.886277, -78.873442], {icon: hotelIcon}).addTo(map).bindPopup("Hilton Garden Inn");
+			L.marker([42.891285, -78.876953], {icon: hotelIcon}).addTo(map).bindPopup("Westin Buffalo");
+			L.marker([42.890891, -78.877396], {icon: hotelIcon}).addTo(map).bindPopup("Hampton Inn & Suites");
+
+
+			 // add hotels
+			/*var circle = L.circle([42.8863591,-78.8771848], 50, {
+			    color: 'red',
+			    fillColor: '#f03',
+			    fillOpacity: 0.5
+			}).bindPopup('Hello!!!').addTo(map);
+
+			var circle = L.circle([42.8853591,-78.8771848], 50, {
+			    color: 'red',
+			    fillColor: 'rgb(114, 191, 151)',
+			    fillOpacity: 0.8
+			}).bindPopup('Hello122!!!').addTo(map);
+
+			var circle = L.circle([42.886547, -78.878231], 50, colors['hotels']).bindPopup('Hello122!!!').addTo(map);*/
+
+			</script>
+
+			<div class="hotel_accommodations">
+				<br/>
+				<h2>Hotel Accommodations</h2>
+
+				<p>We have blocked off rooms for Friday night to Monday morning for a discounted rate at the following
+					nearby hotels.</p>
+
+					<br/>
+
+					<p><strong>Note</strong>: Buffalo is hosting WingFest the same weekend as our wedding, so we recommend booking hotel rooms as early as you can.</p>
+
+				<div class="hotel">
+					<span class="hotel_name">Embassy Suites</span>
+					<ul>
+						<li>$189/night - includes breakfast and a nightly beer/wine reception</li>
+						<li>We reserved 20 two-room suites: 10 with one king bed, 10 with two queen beds
+						<ul>
+							<li>Each room has a sofa bed in the living room as well</li>
+						</ul></li>
+						<li>This hotel might be a good option for groups traveling together</li>
+						<li class="note">Please use the group code of NSV when making reservation to get the discount &mdash; group code is valid until August 3rd, 2017</li>
+						<li>Additional details:
+							<ul>
+								<li>(716) 842-1000</li>
+								<li>200 Delaware Ave, Buffalo, NY 14202</li>
+								<li>Parking is $10/day</li>
+								<li>Free shuttle from the airport</li>
+								<li><a href="http://embassysuites3.hilton.com" target="_blank">Link to their website</a></li>
+							</ul></li>
+					</ul>
+				</div>
+
+
+				<div class="hotel">
+					<span class="hotel_name">Hilton Garden Inn</span>
+					<ul>
+						<li>$199/night</li>
+						<li>We reserved 10 rooms (only 5 of which include Friday night)
+							<ul><li>King and two-Queen rooms available</li></ul></li>
+						<li class="note">Please use the group code of NSW when making reservation to get the discount &mdash; group code is valid until August 2nd, 2017</li>
+						<li>Additional details:
+							<ul>
+								<li>(716) 848-1000</li>
+								<li>10 Lafayette Square, Buffalo, NY 14203</li>
+								<li>Parking is $25/day, breakfast is $12.95/day</li>
+								<li>Free shuttle from the airport</li>
+								<li><a href="http://hiltongardeninn3.hilton.com" target="_blank">Link to their website</a></li>
+							</ul></li>
+					</ul>
+				</div>
+
+
+				<div class="hotel">
+					<span class="hotel_name">Westin Buffalo</span>
+					<ul>
+						<li>$229/night</li>
+						<li>We reserved 10 rooms (King and two-Queen rooms available)</li>
+						<li class="note">Please mention the NeMoyer/Shavit Block when making reservation &mdash; group code is valid until July 21st, 2017</li>
+						<li>Additional details:
+							<ul>
+								<li>(716) 858-5900</li>
+								<li>250 Delaware Ave, Buffalo, NY 14202</li>
+								<li>Parking is $25/day</li>
+								<li><a href="https://www.starwoodmeeting.com/Book/NemoyerShavitWdgBlk2017" target="_blank">Link to their website</a></li>
+							</ul></li>
+					</ul>
+				</div>
+
+				<p>We could not block off rooms at these hotels, but they may also be good options:</p>
+
+				<div class="hotel">
+					<span class="hotel_name">Hampton Inn</span>
+					<ul>
+						<li>Starting at $153/night &mdash; includes breakfast</li>
+						<li>Additional details:
+							<ul>
+								<li>(716) 855-2223</li>
+								<li>220 Delaware Ave, Buffalo, NY 14202</li>
+								<li>Parking is free</li>
+								<li><a href="http://hamptoninn3.hilton.com/en/hotels/new-york/hampton-inn-and-suites-buffalo-downtown-BUFDTHX/index.html" target="_blank">Link to their website</a></li>
+							</ul></li>
+					</ul>
+				</div>
+
+				<div class="hotel">
+					<span class="hotel_name">Hyatt Regency</span>
+					<ul>
+						<li>Starting at $139/night</li>
+						<li>Additional details:
+							<ul>
+								<li>(716) 856-1234</li>
+								<li>2 Fountain Plaza, Buffalo, NY 14202</li>
+								<li><a href="http://buffalo.regency.hyatt.com" target="_blank">Link to their website</a></li>
+							</ul></li>
+					</ul>
+				</div>
+
+
+
+			</div>
+
+		</section>
+
+<!--
+	All blocks are from Friday night to Sunday night.
+	(If you wanna go to Niagara Falls, might wanna come Friday night)
+
+	Hilton Garden Inn
+		- single rooms available
+		- 10 Lafayette Square, Buffalo, NY 14203
+		- (716) 848-1000
+		- hiltongardeninn3.hilton.com
+-->
+
+
+	</div> <!-- ./container -->
+</div> <!-- /.main -->
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,56 @@
+// OUR PICTURES
+.our_pictures {
+  #page-header {
+      // background: url('../img/bg2.jpg') no-repeat top center;
+      background-image: url('../img/our_pictures_header.jpg');
+  }
+
+  .landscape_wrapper {
+    width: 100%;
+  }
+  div.image {
+    float: left;
+    width: 200px;
+    // height: 200px;
+    margin-left: 3px;
+    margin-bottom: 3px;
+
+    img {
+      display: block;
+      vertical-align: middle;
+
+      &:hover {
+        opacity: 0.5;
+        transition: 0.5s;
+      }
+    }
+
+    &.portrait {
+      height: 200px; width: 133px;
+    }
+  }
+
+  section a {
+    text-align: center;
+    display: inline-block;
+    width: 200px; margin: 0 auto; }
+
+	span {
+		display: block; margin: 0 auto; color: $pink;
+		text-align: center;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 1.4em;
+	}
+
+	// .image_slider_container {
+	// 	width: 90%;
+	// 	max-width: 1024px;
+	// 	margin: 0 auto;
+	// }
+
+	section {
+		padding-bottom: 60px;
+	}
+
+	&>div.container { padding-bottom: 10px; } // this prevents chopping the text off.
+}

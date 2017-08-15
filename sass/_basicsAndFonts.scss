@@ -1,0 +1,100 @@
+@font-face {
+    font-family: 'BlanchCapsRegular';
+    src: url('fonts/blanch_caps-webfont.eot');
+    src: url('fonts/blanch_caps-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/blanch_caps-webfont.woff') format('woff'),
+         url('fonts/blanch_caps-webfont.ttf') format('truetype'),
+         url('fonts/blanch_caps-webfont.svg#BlanchCapsRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'League Gothic';
+    src: url('fonts/leaguegothic-regular-webfont.eot');
+    src: url('fonts/leaguegothic-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/leaguegothic-regular-webfont.woff') format('woff'),
+         url('fonts/leaguegothic-regular-webfont.ttf') format('truetype'),
+         url('fonts/leaguegothic-regular-webfont.svg#league_gothicregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'BebasNeueRegular';
+    src: url('fonts/BebasNeue-Regular.eot'),
+    	 url('fonts/ttfs/BebasNeue-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'PacificoRegular';
+    src: url('Pacifico-webfont.eot');
+    src: url('Pacifico-webfont.eot?#iefix') format('embedded-opentype'),
+         url('Pacifico-webfont.woff') format('woff'),
+         url('Pacifico-webfont.ttf') format('truetype'),
+         url('Pacifico-webfont.svg#PacificoRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+ 	font-family: 'Pacifico';
+	src: url(fonts/pacifico.woff2) format('woff2'),
+		 url(fonts/pacifico.ttf) format('truetype');
+	font-style: normal;
+	font-weight: 400;
+}
+
+@font-face {
+	font-family: 'Aileron';
+	src: url(fonts/aileron/Aileron-Light.otf);
+	font-style: normal;
+	font-weight: normal;
+}
+
+
+
+
+/*
+	COLORS
+*/
+$purple : rgb(114, 142, 191);
+$red: rgb(191, 133, 114);
+$green: rgb(114, 191, 151);
+$green2: #69b558;
+$brown: rgb(191, 164, 114);
+$dark_purple: rgb(120,55,154);
+$teal: #58B5B2;
+$pink: #ca5290;
+$gray: #dddddd;
+$yellow: #C3C12F;
+
+// $timeline_color: #1A4877;
+$timeline_color: rgba(29,45,61,1);
+$timeline_h2: rgba(97,165,130,0.85);
+$timeline_h3: #a777d0;
+$timeline_years: #a7708c;
+$timeline_date: rgb(114, 191, 151);
+
+$body_bg: #1D1D1D;
+
+* {
+	box-sizing: border-box;
+	margin: 0 auto;
+	font-family: 'Pacifico', arial;
+}
+html {
+	// background: rgb(120,55,154) url(../img/bg.png) no-repeat top center;
+	// background-size: 100%;
+	// background-attachment: fixed;
+}
+
+body {
+	background: #1D1D1D;
+}
+
+div.push {
+	height: 43px;
+}

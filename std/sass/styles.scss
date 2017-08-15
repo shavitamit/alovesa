@@ -1,0 +1,442 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+
+@import "compass/reset";
+@import url(//db.onlinewebfonts.com/c/8dfe8ad456e43c5c267b846f2316bf3b?family=MCM+Hellenic+Wide);
+@import url(//db.onlinewebfonts.com/c/9ab8abd11c40ee5c8d1905f9c9cb9ac8?family=Futura);
+@import url(//db.onlinewebfonts.com/c/d9472afe9afe8f7ec10413d6d7cf610b?family=Bebas+Neue);
+@import "ribbon";
+
+
+@font-face {font-family: "MCM Hellenic Wide";
+    src: url("//db.onlinewebfonts.com/t/8dfe8ad456e43c5c267b846f2316bf3b.eot");
+    src: url("//db.onlinewebfonts.com/t/8dfe8ad456e43c5c267b846f2316bf3b.eot?#iefix") format("embedded-opentype"),
+    url("//db.onlinewebfonts.com/t/8dfe8ad456e43c5c267b846f2316bf3b.woff2") format("woff2"),
+    url("//db.onlinewebfonts.com/t/8dfe8ad456e43c5c267b846f2316bf3b.woff") format("woff"),
+    url("//db.onlinewebfonts.com/t/8dfe8ad456e43c5c267b846f2316bf3b.ttf") format("truetype"),
+    url("//db.onlinewebfonts.com/t/8dfe8ad456e43c5c267b846f2316bf3b.svg#MCM Hellenic Wide") format("svg");
+}
+@font-face {font-family: "Futura";
+    src: url("//db.onlinewebfonts.com/t/9ab8abd11c40ee5c8d1905f9c9cb9ac8.eot");
+    src: url("//db.onlinewebfonts.com/t/9ab8abd11c40ee5c8d1905f9c9cb9ac8.eot?#iefix") format("embedded-opentype"),
+    url("//db.onlinewebfonts.com/t/9ab8abd11c40ee5c8d1905f9c9cb9ac8.woff2") format("woff2"),
+    url("//db.onlinewebfonts.com/t/9ab8abd11c40ee5c8d1905f9c9cb9ac8.woff") format("woff"),
+    url("//db.onlinewebfonts.com/t/9ab8abd11c40ee5c8d1905f9c9cb9ac8.ttf") format("truetype"),
+    url("//db.onlinewebfonts.com/t/9ab8abd11c40ee5c8d1905f9c9cb9ac8.svg#Futura") format("svg");
+}
+@font-face {font-family: "Bebas Neue";
+    src: url("//db.onlinewebfonts.com/t/d9472afe9afe8f7ec10413d6d7cf610b.eot");
+    src: url("//db.onlinewebfonts.com/t/d9472afe9afe8f7ec10413d6d7cf610b.eot?#iefix") format("embedded-opentype"),
+    url("//db.onlinewebfonts.com/t/d9472afe9afe8f7ec10413d6d7cf610b.woff2") format("woff2"),
+    url("//db.onlinewebfonts.com/t/d9472afe9afe8f7ec10413d6d7cf610b.woff") format("woff"),
+    url("//db.onlinewebfonts.com/t/d9472afe9afe8f7ec10413d6d7cf610b.ttf") format("truetype"),
+    url("//db.onlinewebfonts.com/t/d9472afe9afe8f7ec10413d6d7cf610b.svg#Bebas Neue") format("svg");
+}
+
+
+
+* {
+	box-sizing: border-box;
+	margin: 0 auto;
+	font-family: 'Pacifico', arial;
+}
+
+html { background: white; }
+
+#test {
+  height: 610px;
+  display: block;
+  // background: red;
+  width: 2px;
+  position: absolute;
+  left: 50%;
+  top: 10px;
+  z-index: 999;
+}
+
+#container {
+  margin: 0 auto;
+  width: 800px;
+  height: 515px;
+  // width: 1950px;
+  // height: 1300px;
+  margin-top: 25px;
+  border: solid 1px black;
+  // padding: 1%;
+  // padding: 5px;
+
+
+
+  position: relative;
+}
+
+#img {
+  display: block;
+  position: relative;
+  width: 100%;
+}
+
+#banner_content_wrapper {
+  position: absolute;
+  left: 27px;
+  top: 0;
+}
+
+#banner {
+  width: 800px;
+  // width: 1928px;
+  height: 100px;
+  background: rgba(50, 71, 72,0.65);
+  position: absolute;
+  margin: 0 auto;
+  top: 397px;
+  left: 0px;
+
+
+  #top_horizontal_lines { top: 5px; }
+  #bottom_horizontal_lines { top: 89px; }
+
+  .horizontal_lines {
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 6px;
+    top: 5px;
+    background: transparent;
+  }
+
+  .horizontal_line {
+    width: 100%;
+    display: block;
+    background: rgba(250, 242, 237, 1);
+    height: 1px;
+  }
+
+  .horizontal_line_1 { margin-top: 0; }
+  .horizontal_line_2 { margin-top: 3px; }
+
+
+  .vertical_lines {
+    display: block;
+    position: absolute;
+    height: 100%;
+    width: 6px;
+    left: 0px;
+    background: transparent;
+  }
+
+  .vertical_line {
+    height: 100%;
+    display: block;
+    background: rgba(250, 242, 237, 1);
+    width: 1px;
+    position: absolute;
+  }
+
+  .vertical_line_1 { left: 0; }
+  .vertical_line_2 { left: 5px; }
+
+
+  #save_the_date {
+    width: 175px;
+    background: transparent;
+    height: 80px;
+    top: 10px;
+    left: 40px;
+    position: absolute;
+
+    #left_vertical_lines { left: 5px; }
+    #right_vertical_lines { left: 77%; }
+
+    #mini_vertical_line {
+      height: 31px;
+      display: block;
+      background: rgba(250, 242, 237, 1);
+      width: 2px;
+      position: absolute;
+      left: 45px;
+      top: 42px;
+    }
+
+  .text {
+      span { position: absolute; color: white; }
+      span.save {
+        //font-family: 'MCM Hellenic Wide';
+        //font-family: 'Raleway', sans-serif;
+        font-family: 'Yeseva One', cursive;
+
+
+        font-size: 34px;
+        top: 6px;
+        left: 26px;
+        letter-spacing: 3px;
+      }
+      span.the {
+        top: 50px;
+        font-size: 12px;
+        font-family: 'Futura';
+        left: 17px;
+        transform: rotate(-90deg);
+        letter-spacing: 3px;
+      }
+      span.date {
+        top: 39px;
+        left: 54px;
+        //font-family: 'Bebas Neue';
+        font-family: 'Anton', sans-serif;
+        font-size: 37px;
+      }
+    }
+  }
+
+
+  #main_info {
+    width: 408px;
+    background: transparent;
+    height: 80px;
+    top: 10px;
+    left: 165px;
+    position: absolute;
+
+    #right_vertical_lines { left: 99%; }
+
+    .text {
+      font-family: 'Oswald', sans-serif;
+      color: white;
+      // font-weight: bold;
+      font-size: 34px;
+      position: absolute;
+      top: 5px;
+      letter-spacing: 5px;
+
+      &.amit_and_amanda_wrap {
+        left: 5px;
+      }
+      span {
+        position: absolute;
+        &.AMIT { left: 66px; }
+        &.AND { left: 165px;
+          font-family: 'Slabo 27px', serif;
+          top: 1px;
+        }
+        &.AMANDA { left: 206px; }
+
+      }
+
+      .location, .website {
+        font-family: 'Roboto', sans-serif;
+        font-size: 14px;
+        font-weight: bold;
+        top: 51px;
+        left: 45px;
+        letter-spacing: 1px;
+        width: 300px !important;
+      }
+
+      .website { left: 251px; }
+
+      #mini_vertical_line {
+        width: 2px;
+        display: block;
+        position: absolute;
+        height: 21px;
+        background: white;
+        left: 222px;
+        top: 48px;
+      }
+
+
+    }
+
+    .horizontal_line {
+      position: absolute;
+      top: 43px;
+      left: 16px;
+      width: 388px;
+      height: 2px;
+    }
+  }
+
+
+
+  #date {
+    width: 100px;
+    background: transparent;
+    height: 80px;
+    top: 10px;
+    left: 577px;
+    position: absolute;
+
+    #right_vertical_lines { left: 99%; }
+
+    .text {
+      font-family: 'Yeseva One', cursive;
+      // font-family: 'MCM Hellenic Wide', serif;
+      color: white;
+      // font-weight: bold;
+      font-size: 19px;
+      position: absolute;
+      top: 5px;
+      letter-spacing: 2px;
+
+      span {
+        position: absolute;
+        &.SEPT { top: 0; left: 21px;  }
+        &.day { top: 20px; left: 26px; font-size: 32px;  }
+        &.year { top: 54px; left: 24px;  }
+      }
+    }
+
+
+
+  }
+
+
+} // end banner
+
+/*
+  BACK SIDE OF CARD
+*/
+#back_side {
+
+  margin: 5px;
+  position: relative;
+
+  .return_address{
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    font-family: 'Oswald', sans-serif;
+    // font-family: 'Yeseva One', cursive;
+    // font-weight: bold;
+    color: black;
+    letter-spacing: 1px;
+
+    span {
+      float: left;
+      clear: left;
+      margin-bottom: 3px;
+    }
+  }
+
+
+  .back_image {
+
+    position: absolute;
+    left: 60px;
+    top: 136px;
+
+    img {
+      width: 220px;
+      transform: rotate(-5deg);
+    }
+    .website {
+      font-family: 'Oswald', sans-serif;
+      position: absolute;
+      transform: rotate(-5deg);
+      left: 47px;
+      top: 223px;
+      font-size: 17px;
+      letter-spacing: 2px;
+    }
+
+    .stripe {
+      position: absolute;
+      width: 144px;
+      top: -24px;
+      left: 22px;
+      z-index: 9999;
+      > h2 {
+        padding: 15px;
+      }
+    }
+
+    .stripe-1 {
+      background: repeating-linear-gradient(
+        -45deg,
+        #ba89b6,
+        #ba89b6 3px,
+        white 3px,
+        white 6px
+      );
+      // opacity: 0.85;
+    }
+
+  } // .back_image
+
+
+  .vertical_text {
+
+    position: absolute;
+    left: 340px;
+    top: 328px;
+
+    .text {
+      font-family: 'Oswald', sans-serif;
+      transform: rotate(-90deg);
+      letter-spacing: 2px;
+      font-size: 15px;
+      position: absolute;
+      left: -174px;
+      top: -131px;
+      width: 400px;
+    }
+
+    .heart {
+      position: absolute;
+      top: 83px;
+      left: 19px;
+      color: #ce694b;
+    }
+  } // end veritcal text
+
+
+  .right_side {
+
+    position: absolute;
+    left: 443px;
+    top: 259px;
+
+    .horizontal_line {
+      width: 300px;
+      height: 1px;
+      display: block;
+      margin-bottom: 50px;
+      background: black;
+    }
+
+    .ribbon_wrapper {
+      position: absolute;
+      top: -169px;
+      width: 476px;
+      left: -89px;
+      font-family: 'Oswald', sans-serif;
+      letter-spacing: 2px;
+    }
+
+  } // end right_side
+
+
+
+} // end back_side
+
+
+
+
+
+
+
+
+
+
+
+@media print{
+  body * {
+    visibility: hidden;
+  }
+  #container, #container * { visibility: visible; }
+  #container { position: absolute; top: 0; left: 0; }
+  @page {size: landscape}
+}

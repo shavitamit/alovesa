@@ -1,0 +1,119 @@
+// Event info page
+.event_info {
+  #page-header {
+      // background: url('../img/bg2.jpg') no-repeat top center;
+      background-image: url('../img/event_info_header.jpg') !important;
+  }
+	section#ceremony_details {
+		text-align: center;
+
+		span#date {
+      font-family: 'Pacifico'; font-size: 35px;
+      display: block; margin: 15px 0; color: $pink;
+    }
+		span#time {
+      color: $green2; display: block;
+      margin-top: 10px;
+      margin-bottom: 15px;
+      font-size: 28px;
+    }
+
+		p {
+      // font-family: 'Catamaran', sans-serif;
+      font-family: 'Lobster', cursive;
+
+      line-height: 1.3em;
+    }
+
+    div.food_options {
+      h2 {
+        margin: 30px 0; 
+      }
+      // h1 {
+      //   font-family: 'League Gothic';
+      //   font-size: 30px;
+      //   color: #72bf97;
+      //   // margin-bottom: 5px;
+      // }
+      p {
+        font-family: 'Josefin Sans', sans-serif;
+        font-size: 19px;
+      }
+    }
+
+		// padding-bottom: 10px;
+
+    div.hotel_accommodations {
+      p {
+        font-family: 'Josefin Sans', sans-serif;
+        font-size: 19px;
+      }
+
+      .hotel {
+        display: block;
+        width: 100%;
+        margin-top: 35px;
+        margin-bottom: 35px;
+
+        .hotel_name {
+          color: $green;
+          display: block;
+          text-align: left;
+          margin-bottom: 10px;
+        }
+
+        ul li {
+          text-align: left;
+          color: white;
+          font-family: 'Josefin Sans', sans-serif;
+          list-style-type: disc;
+          margin-left: 30px;
+          font-size: 19px;
+          margin-bottom: 5px;
+          ul li {
+            margin-top: 5px;
+          }
+
+          a {
+            color: $teal;
+            text-decoration: none;
+            &:hover {
+              text-decoration: underline;
+            }
+          }
+        }
+
+        .note {
+          color: $green;
+          // font-style: italic;
+        }
+      }
+    }
+	}
+
+	// No longer needed
+	iframe { margin: 0 auto; display: block; max-width: 100%; margin-top: 25px; margin-bottom: 25px; opacity: 0.85; }
+	.overlay {
+	   background:transparent;
+	   position:relative;
+	   width:400px;
+	   height:250px; /* your iframe height */
+	   top:250px;  /* your iframe height */
+	   margin-top:-250px;  /* your iframe height */
+	}
+
+	// Leaflet
+	#mapid {
+		height: 300px;
+		max-width: 100%;
+		width: 550px;
+		margin: 0 auto;
+		margin-top: 25px;
+	}
+
+	strong { font-weight: bold !important; }
+
+	.leaflet-popup-content {
+		//width:auto !important;
+	}
+}

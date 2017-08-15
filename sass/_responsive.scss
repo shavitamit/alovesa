@@ -1,0 +1,103 @@
+/* RESPONSIVE */
+
+#hamburger {
+	display: none;
+	z-index: 9999;
+}
+
+
+/* --------- OUR PICTURES ----------*/
+// Stack two landscape images per row
+@media all and (max-width: 640px) {
+	.our_pictures {
+		div.image {
+			width: 45%;
+			text-align: center;
+			display: block;
+		}
+	}
+}
+
+// Stack vertically
+@media all and (max-width: 481px) {
+	.our_pictures {
+
+		section {
+			// width: 300px;
+		}
+
+		div.image {
+			width: 100%;
+			position: relative;
+			display: block;
+			text-align: center;
+
+			&.portrait {
+				clear: left;
+				margin-left: 32%;
+			}
+		}
+	}
+}
+/* --------- END OUR PICTURES ----------*/
+
+@media all and (min-width: 620px) {
+	nav {
+		display: block !important; // this ensures menu is shown for large screens
+	}
+}
+
+@media all and (max-width: 620px) {
+	.push { display: none; }
+
+	@import "hamburger";
+
+	/* NAVIGATION */
+	nav {
+
+		display: none;
+		position: fixed;
+		top: 43px;
+		background: rgba(46, 56, 66, 0.85);
+		height: auto;
+
+		div, div.home, div.weddingparty {
+			display: block; width: 100%; text-align: center;
+			border-bottom: solid 1px black;
+		}
+
+		// position: relative;
+		// height: auto;
+
+		div.container { padding: 0; margin: 0; }
+
+		a { width: 100% ; display: block; }
+
+	}
+
+
+	.home_page #message { width: 90%; max-width: 450px; }
+
+  // Wedding Party
+  .wedding_party section .person {
+      display: block;
+      margin: 0 auto;
+      width: 100%;
+      margin-top: 30px;
+
+			&.leftMargin { margin-left: 0; }
+  }
+
+  // FIX HEADER PICTURES
+  .wedding_party #page-header {
+    //background-image: url('../img/pics/26.jpg') !important;
+    background-position: 25% 50%
+  }
+  .our_pictures #page-header {
+    background-position: 60% 50%;
+  }
+  .event_info #page-header {
+    background-position: 55% 50%;
+  }
+
+}

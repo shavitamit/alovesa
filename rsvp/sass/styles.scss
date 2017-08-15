@@ -1,0 +1,387 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+
+@import "compass/reset";
+@import "ribbon";
+
+@font-face {font-family: "MCM Hellenic Wide";
+    src: url("//db.onlinewebfonts.com/t/8dfe8ad456e43c5c267b846f2316bf3b.eot");
+    src: url("//db.onlinewebfonts.com/t/8dfe8ad456e43c5c267b846f2316bf3b.eot?#iefix") format("embedded-opentype"),
+    url("//db.onlinewebfonts.com/t/8dfe8ad456e43c5c267b846f2316bf3b.woff2") format("woff2"),
+    url("//db.onlinewebfonts.com/t/8dfe8ad456e43c5c267b846f2316bf3b.woff") format("woff"),
+    url("//db.onlinewebfonts.com/t/8dfe8ad456e43c5c267b846f2316bf3b.ttf") format("truetype"),
+    url("//db.onlinewebfonts.com/t/8dfe8ad456e43c5c267b846f2316bf3b.svg#MCM Hellenic Wide") format("svg");
+}
+@font-face {font-family: "Futura";
+    src: url("//db.onlinewebfonts.com/t/9ab8abd11c40ee5c8d1905f9c9cb9ac8.eot");
+    src: url("//db.onlinewebfonts.com/t/9ab8abd11c40ee5c8d1905f9c9cb9ac8.eot?#iefix") format("embedded-opentype"),
+    url("//db.onlinewebfonts.com/t/9ab8abd11c40ee5c8d1905f9c9cb9ac8.woff2") format("woff2"),
+    url("//db.onlinewebfonts.com/t/9ab8abd11c40ee5c8d1905f9c9cb9ac8.woff") format("woff"),
+    url("//db.onlinewebfonts.com/t/9ab8abd11c40ee5c8d1905f9c9cb9ac8.ttf") format("truetype"),
+    url("//db.onlinewebfonts.com/t/9ab8abd11c40ee5c8d1905f9c9cb9ac8.svg#Futura") format("svg");
+}
+@font-face {font-family: "Bebas Neue";
+    src: url("//db.onlinewebfonts.com/t/d9472afe9afe8f7ec10413d6d7cf610b.eot");
+    src: url("//db.onlinewebfonts.com/t/d9472afe9afe8f7ec10413d6d7cf610b.eot?#iefix") format("embedded-opentype"),
+    url("//db.onlinewebfonts.com/t/d9472afe9afe8f7ec10413d6d7cf610b.woff2") format("woff2"),
+    url("//db.onlinewebfonts.com/t/d9472afe9afe8f7ec10413d6d7cf610b.woff") format("woff"),
+    url("//db.onlinewebfonts.com/t/d9472afe9afe8f7ec10413d6d7cf610b.ttf") format("truetype"),
+    url("//db.onlinewebfonts.com/t/d9472afe9afe8f7ec10413d6d7cf610b.svg#Bebas Neue") format("svg");
+}
+
+
+$main_color: #131a35;
+// $main_color: #132156;
+
+
+* {
+	box-sizing: border-box;
+	margin: 0 auto;
+	font-family: 'Pacifico', arial;
+}
+
+html { background: white; }
+
+#container {
+  margin: 0 auto;
+  width: 1650px;
+  height: 1275px;
+  margin-top: 25px;
+
+  // border: solid 1px black;
+
+  position: relative;
+}
+
+.frontPostCard {
+
+  #top__bg_fill {
+    display: block;
+    width: 100%;
+    height: 642px;
+    background: $main_color;
+  }
+
+  // define the width / height of the circle
+  $var: 500px;
+
+  #top__white_circle {
+    position: absolute;
+
+    top: (642px - $var)/2;
+    left: ((1650px)/2 - $var/2) ;
+    background: white;
+
+
+    width: $var;
+    height: $var;
+    -moz-border-radius: $var;
+    -webkit-border-radius: $var;
+    border-radius: $var;
+  }
+
+  #top__color_circle {
+    display: block;
+    width: $var - 11px;
+    height: $var - 14px;
+    border-radius: $var - 10;
+    border: solid 6px $main_color;
+
+    position: absolute;
+    top: (642px - $var)/2 + 7 ;
+    left: ((1650px)/2 - $var/2) + 5 ;
+  }
+
+  @mixin horizontal_line {
+    display: block;
+    position: absolute;
+    top: 217px;
+    left: 658px;
+
+    width: 331px;
+    height: 7px;
+
+    background: $main_color;
+  }
+
+  #top__horizontal_line_1 {
+    @include horizontal_line;
+  }
+
+  #top__horizontal_line_2 {
+    @include horizontal_line;
+    top: 395px;
+  }
+
+  #top__please {
+    position: absolute;
+    display: block;
+    left: 732px;
+    top: 134px;
+
+    color: $main_color;
+
+    font-family: 'Roboto', sans-serif;
+    font-size: 63px;
+  }
+
+  #top__rsvp {
+    position: absolute;
+    display: block;
+    left: 610px;
+    top: 225px;
+
+    color: $main_color;
+
+    // font-family: 'Diplomata SC', cursive;
+    // font-family: 'Slabo 36px', serif;
+    font-family: 'Roboto Slab', serif;
+    // font-family: 'Playfair Display', serif;
+
+    font-size: 167px;
+  }
+
+  #top__by_date {
+    position: absolute;
+    display: block;
+    left: 706px;
+    top: 432px;
+    color: $main_color;
+    // font-family: 'Roboto', sans-serif;
+    font-family: 'Yeseva One', cursive;
+    font-size: 63px;
+
+    #top__by { font-family: 'Roboto', sans-serif; }
+  }
+
+  .stripe {
+    position: absolute;
+    width: 100%;
+    z-index: -1;
+    margin-top: -10px;
+    > h2 {
+      padding: 30px;
+    }
+  }
+
+  .stripe-1 {
+    background: repeating-linear-gradient(
+    -45deg,
+    $main_color,
+    $main_color 3px,
+    white 6px,
+    white 9px
+    );
+    opacity: 0.8;
+  }
+
+
+  #bottom {
+
+    #bottom_main_horizontal_line {
+      display: block;
+      position: absolute;
+      background: $main_color;
+      top: 817px;
+      left: 75px;
+      width: 1500px;
+      height: 7px;
+    }
+
+    #bottom__group_accept_decline {
+
+      position: relative;
+      top: 262px;
+      left: 0;
+      width: 100%;
+
+      #bottom_left_horizontal_line,#bottom_right_horizontal_line {
+        display: block;
+        position: absolute;
+        background: $main_color;
+        top: 50px;
+        left: 75px;
+        width: 100px;
+        height: 5px;
+      }
+
+      #bottom_accepts,#bottom_decline {
+        position: absolute;
+        color: $main_color;
+        font-size: 58px;
+
+        top: 0;
+        left: 185px;
+
+        // font-family: 'Diplomata SC', cursive;
+        // font-family: 'Slabo 36px', serif;
+        // font-family: 'Roboto Slab', serif;
+        // font-family: 'Playfair Display', serif;
+
+        // font-family: 'Roboto', sans-serif;
+        font-family: 'Oswald', sans-serif;
+
+      }
+
+      #bottom_right_horizontal_line { left: 962px; }
+      #bottom_decline { left: 1072px;  }
+
+    } // end accept/decline group
+
+
+    #bottom__please_choose {
+      position: absolute;
+      left: 240px;
+      top: 1033px;
+
+      color: gray;
+      font-family: 'Oswald', sans-serif;
+      font-size: 52px;
+      letter-spacing: 2px;
+    }
+
+
+    #bottom__group_food_options {
+
+      position: relative;
+      top: 402px;
+      left: 0;
+      width: 100%;
+
+      #bottom_left_horizontal_line, #bottom_middle_horizontal_line, #bottom_right_horizontal_line {
+        display: block;
+        position: absolute;
+        background: $main_color;
+        top: 148px;
+        left: 75px;
+        width: 100px;
+        height: 5px;
+      }
+
+      #bottom_food_left, #bottom_food_middle, #bottom_food_right {
+        position: absolute;
+        left: 185px;
+        top: 98px;
+
+        color: $main_color;
+        font-family: 'Oswald', sans-serif;
+        font-size: 58px;
+        letter-spacing: 2px;
+      }
+
+      #bottom_middle_horizontal_line { left: 593px; }
+      #bottom_right_horizontal_line { left: 1190px; }
+      #bottom_food_middle { left: 704px;  }
+      #bottom_food_right { left: 1295px;  }
+
+    } // end food options group
+
+
+
+  } // end bottom section
+
+
+} // end frontPostCard
+
+
+.backPostCard {
+
+  #message {
+    position: absolute;
+    width: 613px;
+    text-align: left;
+    top: 126px;
+    left: 101px;
+    font-family: 'Oswald', sans-serif;
+    color: black;
+    letter-spacing: 2px;
+    font-size: 52px;
+  }
+
+  .return_address {
+    position: absolute;
+    text-align: center;
+    top: 568px;
+    left: 905px;
+    font-family: 'Oswald', sans-serif;
+    color: $main_color;
+    letter-spacing: 2px;
+    font-size: 58px;
+    line-height: 1.3em;
+
+    span {
+      float: left;
+      clear: left;
+      margin-bottom: 3px;
+      width: 100%;
+    }
+  }
+
+
+  .vertical_text {
+
+    position: absolute;
+    left: 690px;
+    top: 826px;
+
+    .text {
+      font-family: 'Oswald', sans-serif;
+      transform: rotate(-90deg);
+      letter-spacing: 2px;
+      font-size: 50px;
+      position: absolute;
+      left: -400px;
+      top: -206px;
+      width: 882px;
+      color: $main_color;
+    }
+
+    .heart {
+      position: absolute;
+      top: 279px;
+      left: 23px;
+      color: #ce694b;
+      font-size: 50px;
+    }
+  } // end vertical text
+
+
+  .right_side {
+
+    position: absolute;
+    left: 991px;
+    top: 259px;
+
+    .ribbon_wrapper {
+      position: absolute;
+      top: -97px;
+      width: 476px;
+      left: -22px;
+      font-family: 'Oswald', sans-serif;
+      letter-spacing: 2px;
+    }
+
+  } // end right_side
+
+
+
+
+
+
+} // end back post card
+
+
+
+
+
+
+
+
+
+
+
+
+
+// blah

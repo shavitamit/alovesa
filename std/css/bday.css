@@ -1,0 +1,342 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+@import url(//db.onlinewebfonts.com/c/8dfe8ad456e43c5c267b846f2316bf3b?family=MCM+Hellenic+Wide);
+@import url(//db.onlinewebfonts.com/c/9ab8abd11c40ee5c8d1905f9c9cb9ac8?family=Futura);
+@import url(//db.onlinewebfonts.com/c/d9472afe9afe8f7ec10413d6d7cf610b?family=Bebas+Neue);
+/* line 5, ../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* line 22, ../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1;
+}
+
+/* line 24, ../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 26, ../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 28, ../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 30, ../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 103, ../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 32, ../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 116, ../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block;
+}
+
+/* line 1, ../sass/ribbon.scss */
+.ribbon {
+  font-size: 16px !important;
+  /* This ribbon is based on a 16px font side and a 24px vertical rhythm. I've used em's to position each element for scalability. If you want to use a different font size you may have to play with the position of the ribbon elements */
+  width: 50%;
+  position: relative;
+  background: #ba89b6;
+  color: #fff;
+  text-align: center;
+  padding: 1em 2em;
+  /* Adjust to suit */
+  margin: 2em auto 3em;
+  /* Based on 24px vertical rhythm. 48px bottom margin - normally 24 but the ribbon 'graphics' take up 24px themselves so we double it. */
+}
+
+/* line 14, ../sass/ribbon.scss */
+.ribbon:before, .ribbon:after {
+  content: "";
+  position: absolute;
+  display: block;
+  bottom: -1em;
+  border: 1.5em solid #986794;
+  z-index: -1;
+}
+
+/* line 22, ../sass/ribbon.scss */
+.ribbon:before {
+  left: -2em;
+  border-right-width: 1.5em;
+  border-left-color: transparent;
+}
+
+/* line 27, ../sass/ribbon.scss */
+.ribbon:after {
+  right: -2em;
+  border-left-width: 1.5em;
+  border-right-color: transparent;
+}
+
+/* line 32, ../sass/ribbon.scss */
+.ribbon .ribbon-content:before, .ribbon .ribbon-content:after {
+  content: "";
+  position: absolute;
+  display: block;
+  border-style: solid;
+  border-color: #804f7c transparent transparent transparent;
+  bottom: -1em;
+}
+
+/* line 40, ../sass/ribbon.scss */
+.ribbon .ribbon-content:before {
+  left: 0;
+  border-width: 1em 0 0 1em;
+}
+
+/* line 44, ../sass/ribbon.scss */
+.ribbon .ribbon-content:after {
+  right: 0;
+  border-width: 1em 1em 0 0;
+}
+
+@font-face {
+  font-family: "MCM Hellenic Wide";
+  src: url("//db.onlinewebfonts.com/t/8dfe8ad456e43c5c267b846f2316bf3b.eot");
+  src: url("//db.onlinewebfonts.com/t/8dfe8ad456e43c5c267b846f2316bf3b.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/8dfe8ad456e43c5c267b846f2316bf3b.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/8dfe8ad456e43c5c267b846f2316bf3b.woff") format("woff"), url("//db.onlinewebfonts.com/t/8dfe8ad456e43c5c267b846f2316bf3b.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/8dfe8ad456e43c5c267b846f2316bf3b.svg#MCM Hellenic Wide") format("svg");
+}
+@font-face {
+  font-family: "Futura";
+  src: url("//db.onlinewebfonts.com/t/9ab8abd11c40ee5c8d1905f9c9cb9ac8.eot");
+  src: url("//db.onlinewebfonts.com/t/9ab8abd11c40ee5c8d1905f9c9cb9ac8.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/9ab8abd11c40ee5c8d1905f9c9cb9ac8.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/9ab8abd11c40ee5c8d1905f9c9cb9ac8.woff") format("woff"), url("//db.onlinewebfonts.com/t/9ab8abd11c40ee5c8d1905f9c9cb9ac8.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/9ab8abd11c40ee5c8d1905f9c9cb9ac8.svg#Futura") format("svg");
+}
+@font-face {
+  font-family: "Bebas Neue";
+  src: url("//db.onlinewebfonts.com/t/d9472afe9afe8f7ec10413d6d7cf610b.eot");
+  src: url("//db.onlinewebfonts.com/t/d9472afe9afe8f7ec10413d6d7cf610b.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/d9472afe9afe8f7ec10413d6d7cf610b.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/d9472afe9afe8f7ec10413d6d7cf610b.woff") format("woff"), url("//db.onlinewebfonts.com/t/d9472afe9afe8f7ec10413d6d7cf610b.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/d9472afe9afe8f7ec10413d6d7cf610b.svg#Bebas Neue") format("svg");
+}
+/* line 40, ../sass/bday.scss */
+* {
+  box-sizing: border-box;
+  margin: 0 auto;
+  font-family: 'Pacifico', arial;
+}
+
+/* line 46, ../sass/bday.scss */
+html {
+  background: white;
+}
+
+/* line 48, ../sass/bday.scss */
+#test {
+  height: 610px;
+  display: block;
+  width: 2px;
+  position: absolute;
+  left: 50%;
+  top: 10px;
+  z-index: 999;
+}
+
+/* line 59, ../sass/bday.scss */
+#container {
+  margin: 0 auto;
+  width: 800px;
+  height: 515px;
+  margin-top: 25px;
+  border: solid 1px black;
+  position: relative;
+}
+
+/* line 75, ../sass/bday.scss */
+#img {
+  display: block;
+  position: relative;
+  width: 100%;
+}
+
+/* line 81, ../sass/bday.scss */
+#banner_content_wrapper {
+  position: absolute;
+  left: 27px;
+  top: 0;
+}
+
+/* line 87, ../sass/bday.scss */
+#banner {
+  width: 800px;
+  height: 125px;
+  background: rgba(50, 71, 72, 0.65);
+  position: absolute;
+  margin: 0 auto;
+  top: 372px;
+  left: 0px;
+}
+/* line 98, ../sass/bday.scss */
+#banner #top_horizontal_lines {
+  top: 5px;
+}
+/* line 99, ../sass/bday.scss */
+#banner #bottom_horizontal_lines {
+  top: 114px;
+}
+/* line 101, ../sass/bday.scss */
+#banner .horizontal_lines {
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 6px;
+  top: 5px;
+  background: transparent;
+}
+/* line 110, ../sass/bday.scss */
+#banner .horizontal_line {
+  width: 100%;
+  display: block;
+  background: #faf2ed;
+  height: 1px;
+}
+/* line 117, ../sass/bday.scss */
+#banner .horizontal_line_1 {
+  margin-top: 0;
+}
+/* line 118, ../sass/bday.scss */
+#banner .horizontal_line_2 {
+  margin-top: 3px;
+}
+/* line 121, ../sass/bday.scss */
+#banner .vertical_lines {
+  display: block;
+  position: absolute;
+  height: 100%;
+  width: 6px;
+  left: 0px;
+  background: transparent;
+}
+/* line 130, ../sass/bday.scss */
+#banner .vertical_line {
+  height: 100%;
+  display: block;
+  background: #faf2ed;
+  width: 1px;
+  position: absolute;
+}
+/* line 138, ../sass/bday.scss */
+#banner .vertical_line_1 {
+  left: 0;
+}
+/* line 139, ../sass/bday.scss */
+#banner .vertical_line_2 {
+  left: 5px;
+}
+
+/* line 145, ../sass/bday.scss */
+#msg {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+/* line 154, ../sass/bday.scss */
+#msg #msg_text {
+  padding: 20px;
+  text-shadow: rgba(0, 0, 0, 0.3) 1px 1px 0, rgba(0, 0, 0, 0.3) 2px 2px 0, rgba(0, 0, 0, 0.3) 3px 3px 0;
+}
+/* line 164, ../sass/bday.scss */
+#msg #msg_text p {
+  font-family: 'Arial';
+  color: white;
+  line-height: 1.5em;
+  margin-bottom: 10px;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+/* line 178, ../sass/bday.scss */
+#bday {
+  width: 875px;
+  background: transparent;
+  height: 80px;
+  top: 10px;
+  left: 40px;
+  position: absolute;
+}
+/* line 186, ../sass/bday.scss */
+#bday #left_vertical_lines {
+  left: 5px;
+}
+/* line 187, ../sass/bday.scss */
+#bday #right_vertical_lines {
+  left: 77%;
+}
+/* line 189, ../sass/bday.scss */
+#bday #mini_vertical_line {
+  height: 31px;
+  display: block;
+  background: #faf2ed;
+  width: 2px;
+  position: absolute;
+  left: 45px;
+  top: 42px;
+}
+/* line 200, ../sass/bday.scss */
+#bday .text span {
+  position: absolute;
+  color: white;
+}
+/* line 201, ../sass/bday.scss */
+#bday .text span.save {
+  font-family: 'Yeseva One', cursive;
+  font-size: 34px;
+  top: 6px;
+  left: 26px;
+  letter-spacing: 3px;
+}
+/* line 212, ../sass/bday.scss */
+#bday .text span.the {
+  top: 50px;
+  font-size: 12px;
+  font-family: 'Futura';
+  left: 17px;
+  transform: rotate(-90deg);
+  letter-spacing: 3px;
+}
+/* line 220, ../sass/bday.scss */
+#bday .text span.date {
+  top: 51px;
+  left: 28px;
+  font-family: 'Anton', sans-serif;
+  font-size: 37px;
+}
