@@ -44,7 +44,8 @@ $main_color: #131a35;
 	font-family: 'Pacifico', arial;
 }
 
-html { background: white; }
+// html { background: white; }
+// html { background: purple; }
 
 // a page is 2550px by 3300px at 330dpi ...
 // a real page is 800px width by 1050px height
@@ -66,6 +67,7 @@ html { background: white; }
   top: 60px;
   .leaf {
     width: 300px;
+    margin-top: 10px;
   }
 
   .a_and_a {
