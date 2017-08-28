@@ -50,8 +50,8 @@ html { background: white; }
 // a real page is 800px width by 1050px height
 #container {
   margin: 0 auto;
-  width: 800px;
-  // height: 1050px;
+  width: 815px;
+  height: 1055px;
 
   // border: solid 1px black;
   // background: red;
@@ -59,99 +59,124 @@ html { background: white; }
   position: relative;
 }
 
-.page {
-  // margin-top: 5px;
-  height: 1053px;
-  // margin-bottom: 25px;
-  // border-bottom: solid 15px red;
 
-  // border: solid 2px red;
-
-  // border-bottom: solid 1px black;
-}
-
-.row {
-  clear: both;
-
-  height: 262px;
-
-
-  &:nth-child(2),
-  &:nth-child(4) {
-      border-bottom: solid 1px black;
+#logo {
+  position: absolute;
+  left: 257px;
+  top: 60px;
+  .leaf {
+    width: 300px;
   }
 
-}
-
-
-.card {
-  height: 262px;
-  width: 399px;
-
-  // border-left: solid 1px black;
-
-  float: left;
-  position: relative;
-
   .a_and_a {
-    font-family: 'Roboto Slab', serif;
-    // font-family: 'Oswald', sans-serif;
-    font-size: 46px;
-    position: absolute;
-    left: 70px;
-    top: 71px;
+  font-family: 'Roboto Slab', serif;
+  // font-family: 'Oswald', sans-serif;
+  font-size: 75px;
+  position: absolute;
+  left: 70px;
+  top: 71px;
   }
 
   .date {
     font-family: 'Yeseva One', cursive;
-    font-size: 23px;
+    font-size: 37px;
     position: absolute;
-    left: 88px;
-    top: 129px;
-  }
-
-  .name {
-    font-family: 'Lobster', cursive;
-    font-size: 30px;
-    position: absolute;
-    left: 232px;
-    top: 52px;
-  }
-
-  .table_number {
-    font-family: 'Lobster', cursive;
-    font-size: 25px;
-    position: absolute;
-    left: 232px;
+    left: 103px;
     top: 166px;
   }
 
-  .meal {
-    font-family: 'Lobster', cursive;
-    font-size: 20px;
-    position: absolute;
-    left: 167px;
-    top: -123px;
-    @include rotate(180deg);
-  }
+} // #logo
 
-  .leaf {
-    position: absolute;
-    width: 176px;
-    top: 36px;
-    left: 30px;
-  }
-}
+#content_front {
 
-.spacer {
+  position: relative;
+  top: 420px;
+  left: 0px;
   width: 100%;
-  height: 262px;
-  // background: green;
+
+  text-align: center;
+
+  .spacer {
+    display: block;
+    height: 50px;
+  }
+
+  p {
+    font-family: 'Lobster', cursive;
+    font-size: 50px;
+    clear: left;
+    display: block;
+    margin-bottom: 30px;
+  }
+
+  p#hashtag {
+    font-family: 'Roboto Slab', serif;
+    font-family: 'Lobster', cursive;
+    font-size: 35px;
+  }
+
+} // #content_front
+
+
+
+#content_back {
+
+  position: relative;
+  top: 50px;
+  left: 0px;
+  width: 100%;
+
+  text-align: center;
+
+  h1 {
+    font-family: 'Pacifico', cursive;
+    font-size: 50px;
+    clear: left;
+    display: block;
+    margin-bottom: 35px;
+  }
+
+  p {
+    font-family: 'Roboto Slab', serif;
+    font-size: 22px;
+    line-height: 33px;
+  }
+
+  section {
+    margin-bottom: 30px;
+  }
+
+  #wedding_party {
+
+    .left {
+      float: left;
+      width: 300px;
+      text-align: right;
+      margin-left: 73px;
+    }
+
+    .right {
+      float: left;
+      width: 300px;
+      text-align: left;
+      margin-left: 70px;
+    }
+
+    p { line-height: 1em; }
+    p.title { margin-bottom: 10px; }
+    p.names { font-style: italic; line-height: 1.2em; }
+    p.desc { font-style: italic; font-size: 15px; line-height: 1.2em; }
+
+    .spacer {
+      display: block;
+      height: 30px;
+    }
+
+    .small_spacer { display: block; height: 10px; }
+
+  } // #wedding_party
+
 }
-
-
-
-
 
 
 

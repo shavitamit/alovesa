@@ -197,86 +197,132 @@ html {
 /* line 51, ../sass/styles.scss */
 #container {
   margin: 0 auto;
-  width: 800px;
+  width: 815px;
+  height: 1055px;
   position: relative;
 }
 
-/* line 62, ../sass/styles.scss */
-.page {
-  height: 1053px;
+/* line 63, ../sass/styles.scss */
+#logo {
+  position: absolute;
+  left: 257px;
+  top: 60px;
 }
-
-/* line 73, ../sass/styles.scss */
-.row {
-  clear: both;
-  height: 262px;
+/* line 67, ../sass/styles.scss */
+#logo .leaf {
+  width: 300px;
 }
-/* line 79, ../sass/styles.scss */
-.row:nth-child(2), .row:nth-child(4) {
-  border-bottom: solid 1px black;
-}
-
-/* line 87, ../sass/styles.scss */
-.card {
-  height: 262px;
-  width: 399px;
-  float: left;
-  position: relative;
-}
-/* line 96, ../sass/styles.scss */
-.card .a_and_a {
+/* line 71, ../sass/styles.scss */
+#logo .a_and_a {
   font-family: 'Roboto Slab', serif;
-  font-size: 46px;
+  font-size: 75px;
   position: absolute;
   left: 70px;
   top: 71px;
 }
-/* line 105, ../sass/styles.scss */
-.card .date {
+/* line 80, ../sass/styles.scss */
+#logo .date {
   font-family: 'Yeseva One', cursive;
-  font-size: 23px;
+  font-size: 37px;
   position: absolute;
-  left: 88px;
-  top: 129px;
-}
-/* line 113, ../sass/styles.scss */
-.card .name {
-  font-family: 'Lobster', cursive;
-  font-size: 30px;
-  position: absolute;
-  left: 232px;
-  top: 52px;
-}
-/* line 121, ../sass/styles.scss */
-.card .table_number {
-  font-family: 'Lobster', cursive;
-  font-size: 25px;
-  position: absolute;
-  left: 232px;
+  left: 103px;
   top: 166px;
 }
-/* line 129, ../sass/styles.scss */
-.card .meal {
-  font-family: 'Lobster', cursive;
-  font-size: 20px;
-  position: absolute;
-  left: 167px;
-  top: -123px;
-  -moz-transform: rotate(180deg);
-  -ms-transform: rotate(180deg);
-  -webkit-transform: rotate(180deg);
-  transform: rotate(180deg);
+
+/* line 90, ../sass/styles.scss */
+#content_front {
+  position: relative;
+  top: 420px;
+  left: 0px;
+  width: 100%;
+  text-align: center;
 }
-/* line 138, ../sass/styles.scss */
-.card .leaf {
-  position: absolute;
-  width: 176px;
-  top: 36px;
-  left: 30px;
+/* line 99, ../sass/styles.scss */
+#content_front .spacer {
+  display: block;
+  height: 50px;
+}
+/* line 104, ../sass/styles.scss */
+#content_front p {
+  font-family: 'Lobster', cursive;
+  font-size: 50px;
+  clear: left;
+  display: block;
+  margin-bottom: 30px;
+}
+/* line 112, ../sass/styles.scss */
+#content_front p#hashtag {
+  font-family: 'Roboto Slab', serif;
+  font-family: 'Lobster', cursive;
+  font-size: 35px;
 }
 
-/* line 146, ../sass/styles.scss */
-.spacer {
+/* line 122, ../sass/styles.scss */
+#content_back {
+  position: relative;
+  top: 50px;
+  left: 0px;
   width: 100%;
-  height: 262px;
+  text-align: center;
+}
+/* line 131, ../sass/styles.scss */
+#content_back h1 {
+  font-family: 'Pacifico', cursive;
+  font-size: 50px;
+  clear: left;
+  display: block;
+  margin-bottom: 35px;
+}
+/* line 139, ../sass/styles.scss */
+#content_back p {
+  font-family: 'Roboto Slab', serif;
+  font-size: 22px;
+  line-height: 33px;
+}
+/* line 145, ../sass/styles.scss */
+#content_back section {
+  margin-bottom: 30px;
+}
+/* line 151, ../sass/styles.scss */
+#content_back #wedding_party .left {
+  float: left;
+  width: 300px;
+  text-align: right;
+  margin-left: 73px;
+}
+/* line 158, ../sass/styles.scss */
+#content_back #wedding_party .right {
+  float: left;
+  width: 300px;
+  text-align: left;
+  margin-left: 70px;
+}
+/* line 165, ../sass/styles.scss */
+#content_back #wedding_party p {
+  line-height: 1em;
+}
+/* line 166, ../sass/styles.scss */
+#content_back #wedding_party p.title {
+  margin-bottom: 10px;
+}
+/* line 167, ../sass/styles.scss */
+#content_back #wedding_party p.names {
+  font-style: italic;
+  line-height: 1.2em;
+}
+/* line 168, ../sass/styles.scss */
+#content_back #wedding_party p.desc {
+  font-style: italic;
+  font-size: 15px;
+  line-height: 1.2em;
+}
+/* line 170, ../sass/styles.scss */
+#content_back #wedding_party .spacer {
+  display: block;
+  height: 30px;
+}
+/* line 175, ../sass/styles.scss */
+#content_back #wedding_party .small_spacer {
+  display: block;
+  height: 10px;
 }
