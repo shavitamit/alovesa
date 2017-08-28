@@ -129,10 +129,11 @@ html { background: white; }
   .meal {
     font-family: 'Lobster', cursive;
     font-family: 'Roboto Slab', serif;
+    font-family: 'Helvetica';
     font-size: 15px;
     position: absolute;
     left: 167px;
-    top: -123px;
+    top: -183px;
     @include rotate(180deg);
   }
 
