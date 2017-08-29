@@ -44,116 +44,83 @@ $main_color: #131a35;
 	font-family: 'Pacifico', arial;
 }
 
-html { background: transparent; zoom: 1.2;  }
+// html { background: white; }
+// html { background: purple; }
 
 // a page is 2550px by 3300px at 330dpi ...
 // a real page is 800px width by 1050px height
 #container {
   margin: 0 auto;
-  width: 800px;
-  // height: 1050px;
+  width: 850px;
+  height: 1100px;
 
-  // border: solid 1px black;
+  border: solid 1px black;
   // background: red;
 
   position: relative;
 }
 
-.page {
-  // margin-top: 5px;
-  height: 1053px;
-  // margin-bottom: 25px;
-  // border-bottom: solid 15px red;
 
-  // border: solid 2px red;
+#logo {
+  position: absolute;
+  left: 67px;
+  top: 20px;
 
-  // border-bottom: solid 1px black;
-}
-
-.row {
-  clear: both;
-
-  height: 262px;
-
-
-  &:nth-child(2),
-  &:nth-child(4) {
-      border-bottom: solid 1px black;
+  .leaf {
+    width: 200px;
+    margin-top: 10px;
   }
-
-}
-
-
-.card {
-  height: 262px;
-  width: 399px;
-
-  // border-left: solid 1px black;
-
-  float: left;
-  position: relative;
 
   .a_and_a {
     font-family: 'Roboto Slab', serif;
     // font-family: 'Oswald', sans-serif;
-    font-size: 46px;
+    font-size: 42px;
     position: absolute;
-    left: 70px;
-    top: 71px;
+    left: 56px;
+    top: 57px;
   }
 
   .date {
     font-family: 'Yeseva One', cursive;
     font-size: 23px;
     position: absolute;
-    left: 88px;
-    top: 129px;
+    left: 69px;
+    top: 107px;
   }
 
-  .name {
-    font-family: 'Lobster', cursive;
-    font-size: 30px;
-    position: absolute;
-    left: 232px;
-    top: 52px;
+} // #logo
+
+#content {
+
+  position: relative;
+  top: 35px;
+  left: 300px;
+  width: 500px;
+
+  text-align: left;
+
+  background: red;
+
+  .spacer {
+    display: block;
+    height: 50px;
   }
 
-  .table_number {
+  p {
     font-family: 'Lobster', cursive;
-    font-size: 25px;
-    position: absolute;
-    left: 232px;
-    top: 166px;
+    font-size: 20px;
+    clear: left;
+    display: block;
+    margin-bottom: 30px;
   }
 
-  .meal {
-    font-family: 'Lobster', cursive;
+  p#hashtag {
     font-family: 'Roboto Slab', serif;
-    font-family: 'Oswald', sans-serif;
-    font-size: 18px;
-    position: absolute;
-    left: 167px;
-    top: -183px;
-    @include rotate(180deg);
+    font-family: 'Lobster', cursive;
+    font-size: 35px;
   }
 
-  .leaf {
-    position: absolute;
-    width: 176px;
-    top: 36px;
-    left: 30px;
-  }
-}
-
-.spacer {
-  width: 100%;
-  height: 262px;
-  // background: green;
-}
-
-
-
-
+} // #content_front
 
 
 
