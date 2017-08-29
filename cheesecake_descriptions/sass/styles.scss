@@ -7,32 +7,7 @@
 @import "compass/css3/transform";
 @import "ribbon";
 
-@font-face {font-family: "MCM Hellenic Wide";
-    src: url("//db.onlinewebfonts.com/t/8dfe8ad456e43c5c267b846f2316bf3b.eot");
-    src: url("//db.onlinewebfonts.com/t/8dfe8ad456e43c5c267b846f2316bf3b.eot?#iefix") format("embedded-opentype"),
-    url("//db.onlinewebfonts.com/t/8dfe8ad456e43c5c267b846f2316bf3b.woff2") format("woff2"),
-    url("//db.onlinewebfonts.com/t/8dfe8ad456e43c5c267b846f2316bf3b.woff") format("woff"),
-    url("//db.onlinewebfonts.com/t/8dfe8ad456e43c5c267b846f2316bf3b.ttf") format("truetype"),
-    url("//db.onlinewebfonts.com/t/8dfe8ad456e43c5c267b846f2316bf3b.svg#MCM Hellenic Wide") format("svg");
-}
-@font-face {font-family: "Futura";
-    src: url("//db.onlinewebfonts.com/t/9ab8abd11c40ee5c8d1905f9c9cb9ac8.eot");
-    src: url("//db.onlinewebfonts.com/t/9ab8abd11c40ee5c8d1905f9c9cb9ac8.eot?#iefix") format("embedded-opentype"),
-    url("//db.onlinewebfonts.com/t/9ab8abd11c40ee5c8d1905f9c9cb9ac8.woff2") format("woff2"),
-    url("//db.onlinewebfonts.com/t/9ab8abd11c40ee5c8d1905f9c9cb9ac8.woff") format("woff"),
-    url("//db.onlinewebfonts.com/t/9ab8abd11c40ee5c8d1905f9c9cb9ac8.ttf") format("truetype"),
-    url("//db.onlinewebfonts.com/t/9ab8abd11c40ee5c8d1905f9c9cb9ac8.svg#Futura") format("svg");
-}
-@font-face {font-family: "Bebas Neue";
-    src: url("//db.onlinewebfonts.com/t/d9472afe9afe8f7ec10413d6d7cf610b.eot");
-    src: url("//db.onlinewebfonts.com/t/d9472afe9afe8f7ec10413d6d7cf610b.eot?#iefix") format("embedded-opentype"),
-    url("//db.onlinewebfonts.com/t/d9472afe9afe8f7ec10413d6d7cf610b.woff2") format("woff2"),
-    url("//db.onlinewebfonts.com/t/d9472afe9afe8f7ec10413d6d7cf610b.woff") format("woff"),
-    url("//db.onlinewebfonts.com/t/d9472afe9afe8f7ec10413d6d7cf610b.ttf") format("truetype"),
-    url("//db.onlinewebfonts.com/t/d9472afe9afe8f7ec10413d6d7cf610b.svg#Bebas Neue") format("svg");
-}
-
-@import "basicsAndFonts";
+// @import "basicsAndFonts";
 
 $main_color: #131a35;
 // $main_color: #132156;
@@ -123,12 +98,20 @@ html { background: transparent; zoom: 1.2;  }
     position: absolute;
     left: 195px;
     top: 52px;
-    line-height: 1.1em; 
+    line-height: 1.1em;
+  }
+
+  .special_name {
+    font-size: 17px;
+    top: 105px;
   }
 
   .blueberry { top: 60px; }
   // .pb { top: 65px;  }
   .cookies_and_cream { top: 60px;  }
+
+  .pastry { top: 67px; }
+
 
   .table_number {
     font-family: 'Lobster', cursive;
@@ -137,6 +120,8 @@ html { background: transparent; zoom: 1.2;  }
     left: 232px;
     top: 166px;
   }
+
+
 
   .meal {
     font-family: 'Lobster', cursive;

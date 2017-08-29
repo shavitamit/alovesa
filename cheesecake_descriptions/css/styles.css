@@ -128,110 +128,56 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   border-width: 1em 1em 0 0;
 }
 
-@font-face {
-  font-family: "MCM Hellenic Wide";
-  src: url("//db.onlinewebfonts.com/t/8dfe8ad456e43c5c267b846f2316bf3b.eot");
-  src: url("//db.onlinewebfonts.com/t/8dfe8ad456e43c5c267b846f2316bf3b.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/8dfe8ad456e43c5c267b846f2316bf3b.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/8dfe8ad456e43c5c267b846f2316bf3b.woff") format("woff"), url("//db.onlinewebfonts.com/t/8dfe8ad456e43c5c267b846f2316bf3b.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/8dfe8ad456e43c5c267b846f2316bf3b.svg#MCM Hellenic Wide") format("svg");
-}
-@font-face {
-  font-family: "Futura";
-  src: url("//db.onlinewebfonts.com/t/9ab8abd11c40ee5c8d1905f9c9cb9ac8.eot");
-  src: url("//db.onlinewebfonts.com/t/9ab8abd11c40ee5c8d1905f9c9cb9ac8.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/9ab8abd11c40ee5c8d1905f9c9cb9ac8.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/9ab8abd11c40ee5c8d1905f9c9cb9ac8.woff") format("woff"), url("//db.onlinewebfonts.com/t/9ab8abd11c40ee5c8d1905f9c9cb9ac8.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/9ab8abd11c40ee5c8d1905f9c9cb9ac8.svg#Futura") format("svg");
-}
-@font-face {
-  font-family: "Bebas Neue";
-  src: url("//db.onlinewebfonts.com/t/d9472afe9afe8f7ec10413d6d7cf610b.eot");
-  src: url("//db.onlinewebfonts.com/t/d9472afe9afe8f7ec10413d6d7cf610b.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/d9472afe9afe8f7ec10413d6d7cf610b.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/d9472afe9afe8f7ec10413d6d7cf610b.woff") format("woff"), url("//db.onlinewebfonts.com/t/d9472afe9afe8f7ec10413d6d7cf610b.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/d9472afe9afe8f7ec10413d6d7cf610b.svg#Bebas Neue") format("svg");
-}
-@font-face {
-  font-family: 'BlanchCapsRegular';
-  src: url("fonts/blanch_caps-webfont.eot");
-  src: url("fonts/blanch_caps-webfont.eot?#iefix") format("embedded-opentype"), url("fonts/blanch_caps-webfont.woff") format("woff"), url("fonts/blanch_caps-webfont.ttf") format("truetype"), url("fonts/blanch_caps-webfont.svg#BlanchCapsRegular") format("svg");
-  font-weight: normal;
-  font-style: normal;
-}
-@font-face {
-  font-family: 'League Gothic';
-  src: url("fonts/leaguegothic-regular-webfont.eot");
-  src: url("fonts/leaguegothic-regular-webfont.eot?#iefix") format("embedded-opentype"), url("fonts/leaguegothic-regular-webfont.woff") format("woff"), url("fonts/leaguegothic-regular-webfont.ttf") format("truetype"), url("fonts/leaguegothic-regular-webfont.svg#league_gothicregular") format("svg");
-  font-weight: normal;
-  font-style: normal;
-}
-@font-face {
-  font-family: 'BebasNeueRegular';
-  src: url("fonts/BebasNeue-Regular.eot"), url("fonts/ttfs/BebasNeue-Regular.ttf") format("truetype");
-  font-weight: normal;
-  font-style: normal;
-}
-@font-face {
-  font-family: 'PacificoRegular';
-  src: url("Pacifico-webfont.eot");
-  src: url("Pacifico-webfont.eot?#iefix") format("embedded-opentype"), url("Pacifico-webfont.woff") format("woff"), url("Pacifico-webfont.ttf") format("truetype"), url("Pacifico-webfont.svg#PacificoRegular") format("svg");
-  font-weight: normal;
-  font-style: normal;
-}
-@font-face {
-  font-family: 'Pacifico';
-  src: url(fonts/pacifico.woff2) format("woff2"), url(fonts/pacifico.ttf) format("truetype");
-  font-style: normal;
-  font-weight: 400;
-}
-@font-face {
-  font-family: 'Aileron';
-  src: url(fonts/aileron/Aileron-Light.otf);
-  font-style: normal;
-  font-weight: normal;
-}
-/* line 41, ../sass/styles.scss */
+/* line 16, ../sass/styles.scss */
 * {
   box-sizing: border-box;
   margin: 0 auto;
   font-family: 'Pacifico', arial;
 }
 
-/* line 47, ../sass/styles.scss */
+/* line 22, ../sass/styles.scss */
 html {
   background: transparent;
   zoom: 1.2;
 }
 
-/* line 51, ../sass/styles.scss */
+/* line 26, ../sass/styles.scss */
 #container {
   margin: 0 auto;
   width: 850px;
   position: relative;
 }
 
-/* line 62, ../sass/styles.scss */
+/* line 37, ../sass/styles.scss */
 .page {
   height: 1053px;
 }
 
-/* line 73, ../sass/styles.scss */
+/* line 48, ../sass/styles.scss */
 .row {
   clear: both;
   height: 200px;
 }
-/* line 79, ../sass/styles.scss */
+/* line 54, ../sass/styles.scss */
 .row:nth-child(2), .row:nth-child(4) {
   border-bottom: solid 1px black;
 }
 
-/* line 87, ../sass/styles.scss */
+/* line 62, ../sass/styles.scss */
 .card {
   height: 200px;
   width: 399px;
   float: left;
   position: relative;
 }
-/* line 96, ../sass/styles.scss */
+/* line 71, ../sass/styles.scss */
 .card .leaf {
   position: absolute;
   width: 150px;
   top: 36px;
   left: 30px;
 }
-/* line 103, ../sass/styles.scss */
+/* line 78, ../sass/styles.scss */
 .card .a_and_a {
   font-family: 'Roboto Slab', serif;
   font-size: 34px;
@@ -239,7 +185,7 @@ html {
   left: 70px;
   top: 71px;
 }
-/* line 112, ../sass/styles.scss */
+/* line 87, ../sass/styles.scss */
 .card .date {
   font-family: 'Yeseva One', cursive;
   font-size: 19px;
@@ -247,7 +193,7 @@ html {
   left: 81px;
   top: 111px;
 }
-/* line 120, ../sass/styles.scss */
+/* line 95, ../sass/styles.scss */
 .card .name {
   font-family: 'Lobster', cursive;
   font-size: 30px;
@@ -256,15 +202,24 @@ html {
   top: 52px;
   line-height: 1.1em;
 }
-/* line 129, ../sass/styles.scss */
+/* line 104, ../sass/styles.scss */
+.card .special_name {
+  font-size: 17px;
+  top: 105px;
+}
+/* line 109, ../sass/styles.scss */
 .card .blueberry {
   top: 60px;
 }
-/* line 131, ../sass/styles.scss */
+/* line 111, ../sass/styles.scss */
 .card .cookies_and_cream {
   top: 60px;
 }
-/* line 133, ../sass/styles.scss */
+/* line 113, ../sass/styles.scss */
+.card .pastry {
+  top: 67px;
+}
+/* line 116, ../sass/styles.scss */
 .card .table_number {
   font-family: 'Lobster', cursive;
   font-size: 25px;
@@ -272,7 +227,7 @@ html {
   left: 232px;
   top: 166px;
 }
-/* line 141, ../sass/styles.scss */
+/* line 126, ../sass/styles.scss */
 .card .meal {
   font-family: 'Lobster', cursive;
   font-family: 'Roboto Slab', serif;
@@ -287,7 +242,7 @@ html {
   transform: rotate(180deg);
 }
 
-/* line 155, ../sass/styles.scss */
+/* line 140, ../sass/styles.scss */
 .spacer {
   width: 100%;
 }
