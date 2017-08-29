@@ -109,12 +109,23 @@ $main_color: #131a35;
     clear: left;
     display: block;
     margin-bottom: 30px;
+
+    // color: #7f247f;
   }
+
+  // #welcome, #amanda_and_amit, #wedding { color: #7f247f; }
+
+  p#city { font-size: 35px; }
 
   p#hashtag {
     font-family: 'Roboto Slab', serif;
     font-family: 'Lobster', cursive;
     font-size: 35px;
+    color: black;
+
+    display: block;
+    position: relative;
+    top: 70px;
   }
 
 } // #content_front
@@ -136,6 +147,7 @@ $main_color: #131a35;
     clear: left;
     display: block;
     margin-bottom: 35px;
+    // color: #7f247f;
   }
 
   p {
@@ -143,6 +155,7 @@ $main_color: #131a35;
     font-size: 22px;
     line-height: 33px;
   }
+
 
   section {
     margin-bottom: 30px;

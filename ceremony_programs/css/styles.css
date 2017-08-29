@@ -246,14 +246,22 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   display: block;
   margin-bottom: 30px;
 }
-/* line 114, ../sass/styles.scss */
+/* line 118, ../sass/styles.scss */
+#content_front p#city {
+  font-size: 35px;
+}
+/* line 120, ../sass/styles.scss */
 #content_front p#hashtag {
   font-family: 'Roboto Slab', serif;
   font-family: 'Lobster', cursive;
   font-size: 35px;
+  color: black;
+  display: block;
+  position: relative;
+  top: 70px;
 }
 
-/* line 124, ../sass/styles.scss */
+/* line 135, ../sass/styles.scss */
 #content_back {
   position: relative;
   top: 50px;
@@ -261,7 +269,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   width: 100%;
   text-align: center;
 }
-/* line 133, ../sass/styles.scss */
+/* line 144, ../sass/styles.scss */
 #content_back h1 {
   font-family: 'Pacifico', cursive;
   font-size: 50px;
@@ -269,55 +277,55 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   display: block;
   margin-bottom: 35px;
 }
-/* line 141, ../sass/styles.scss */
+/* line 153, ../sass/styles.scss */
 #content_back p {
   font-family: 'Roboto Slab', serif;
   font-size: 22px;
   line-height: 33px;
 }
-/* line 147, ../sass/styles.scss */
+/* line 160, ../sass/styles.scss */
 #content_back section {
   margin-bottom: 30px;
 }
-/* line 153, ../sass/styles.scss */
+/* line 166, ../sass/styles.scss */
 #content_back #wedding_party .left {
   float: left;
   width: 300px;
   text-align: right;
   margin-left: 73px;
 }
-/* line 160, ../sass/styles.scss */
+/* line 173, ../sass/styles.scss */
 #content_back #wedding_party .right {
   float: left;
   width: 300px;
   text-align: left;
   margin-left: 70px;
 }
-/* line 167, ../sass/styles.scss */
+/* line 180, ../sass/styles.scss */
 #content_back #wedding_party p {
   line-height: 1em;
 }
-/* line 168, ../sass/styles.scss */
+/* line 181, ../sass/styles.scss */
 #content_back #wedding_party p.title {
   margin-bottom: 10px;
 }
-/* line 169, ../sass/styles.scss */
+/* line 182, ../sass/styles.scss */
 #content_back #wedding_party p.names {
   font-style: italic;
   line-height: 1.2em;
 }
-/* line 170, ../sass/styles.scss */
+/* line 183, ../sass/styles.scss */
 #content_back #wedding_party p.desc {
   font-style: italic;
   font-size: 15px;
   line-height: 1.2em;
 }
-/* line 172, ../sass/styles.scss */
+/* line 185, ../sass/styles.scss */
 #content_back #wedding_party .spacer {
   display: block;
   height: 30px;
 }
-/* line 177, ../sass/styles.scss */
+/* line 190, ../sass/styles.scss */
 #content_back #wedding_party .small_spacer {
   display: block;
   height: 10px;
